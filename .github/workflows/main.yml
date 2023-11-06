@@ -25,4 +25,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Checkout M0WUT libraries
         uses: actions/checkout@v4
+        with:
           repository: git@github.com:M0WUT/kicad_libraries.git
