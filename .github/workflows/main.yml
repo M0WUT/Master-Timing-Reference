@@ -24,4 +24,4 @@ jobs:
       - name: Checkout Interactive HTML BoM
         uses: actions/checkout@v4
         with:
-          repository: "git@github.com:openscopeproject/InteractiveHtmlBom.git"
+          repository: "git@github.com:openscopeproject/InteractiveHtmlBom"
