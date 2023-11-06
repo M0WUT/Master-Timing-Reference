@@ -1,5 +1,5 @@
-# Original idea and credit go to https://github.com/vroland/epdiy-hardware/blob/main/.github/workflows/main.yml
-# Modded for M0WUT library
+# Original Idea from https://github.com/vroland/epdiy-hardware/blob/main/.github/workflows/main.yml
+# Entirely re-written by M0WUT
 
 name: Kicad deployment
 on:
@@ -9,22 +9,19 @@ jobs:
   build-artifacts:
     runs-on: ubuntu-latest
     steps:
-      # - name: install kicad
-      #   run: |
-      #     sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
-      #     sudo apt update
-      #     sudo apt install kicad
-      # - run: kicad-cli version
-      # - name: install kikit
-      #   run: |
-      #     pip install kikit
-      #     pip install mistune==2.0.5 
-      #     pip install PcbDraw
-      #     sudo apt install make cmark xsltproc librsvg2-bin
-      # - name: Checkout repo
-      #   uses: actions/checkout@v4
-      - name: Checkout M0WUT libraries
+      - name: Install Kicad
+        run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
+          sudo apt update
+          sudo apt install kicad
+      - run: kicad-cli version
+      - name: install kikit
+        run: |
+          pip install kikit
+          pip install PcbDraw
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Checkout Interactive HTML BoM
         uses: actions/checkout@v4
         with:
-          repository: git@github.com:M0WUT/kicad_libraries.git
-          token: ${{ secrets.ACTIONS_KEY}}
+          repository: "git@github.com:openscopeproject/InteractiveHtmlBom.git"
