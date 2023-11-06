@@ -21,10 +21,13 @@ jobs:
       #     pip install PcbDraw
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          path: main
       - name: Checkout Interactive HTML BoM
         uses: actions/checkout@v4
         with:
           repository: "openscopeproject/InteractiveHtmlBom"
+          path: ibom
       - run: pwd
       - run: ls
           
