@@ -33,11 +33,8 @@ jobs:
         with:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
-      - run: cd main
       - run: mkdir build
-      - run: pwd
-      - run: ls
-      - run: python ../kicad_releaser/releaser.py ../build
+      - run: python kicad_releaser/releaser.py build
       
 
       
