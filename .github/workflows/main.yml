@@ -2,7 +2,7 @@
 # Modded for M0WUT library
 
 name: Kicad deployment
-on: [push]
+on:
   push:
     branches: [ main ]
 jobs:
