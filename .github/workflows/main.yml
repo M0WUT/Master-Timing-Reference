@@ -28,6 +28,6 @@ jobs:
         with:
           repository: "openscopeproject/InteractiveHtmlBom"
           path: ibom
-      - run: pwd
-      - run: ls
+      - run: python -V
+      
           
