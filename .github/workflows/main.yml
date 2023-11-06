@@ -9,11 +9,11 @@ jobs:
   build-artifacts:
     runs-on: ubuntu-latest
     steps:
-      - name: install kicad
-        run: |
-          sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
-          sudo apt update
-          sudo apt install kicad
+      # - name: install kicad
+      #   run: |
+      #     sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
+      #     sudo apt update
+      #     sudo apt install kicad
       - run: kicad-cli version
       - name: install kikit
         run: |
@@ -23,3 +23,6 @@ jobs:
           sudo apt install make cmark xsltproc librsvg2-bin
       - name: Checkout repo
         uses: actions/checkout@v4
+      - name: Checkout M0WUT libraries
+        uses: actions/checkout@v4
+          repository: git@github.com:M0WUT/kicad_libraries.git
