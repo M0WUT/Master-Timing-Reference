@@ -27,3 +27,4 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: git@github.com:M0WUT/kicad_libraries.git
+          token: ${{ secrets.ACTIONS_KEY}}
