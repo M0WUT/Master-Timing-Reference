@@ -1,6 +1,3 @@
-# Original Idea from https://github.com/vroland/epdiy-hardware/blob/main/.github/workflows/main.yml
-# Entirely re-written by M0WUT
-
 name: Kicad deployment
 on:
   push:
@@ -31,6 +28,7 @@ jobs:
           path: kicad_releaser
       - run: mkdir build
       - run: python kicad_releaser/releaser.py main build
+      - run: kikit present boardpage -h
       
 
       
