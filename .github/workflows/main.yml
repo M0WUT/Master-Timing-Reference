@@ -28,6 +28,15 @@ jobs:
         with:
           repository: "openscopeproject/InteractiveHtmlBom"
           path: ibom
-      - run: python -V
+      - name: Checkout M0WUT Kicad Releaser
+        uses: actions/checkout@v4
+        with:
+          repository: "M0WUT/kicad_releaser"
+          path: kicad_releaser
+      - run: cd main
+      - run: mkdir build
+      - run: python ../kicad_releaser/releaser.py ../build
+      
+
       
           
