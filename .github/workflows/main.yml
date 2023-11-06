@@ -15,10 +15,6 @@ jobs:
       #     sudo apt update
       #     sudo apt install kicad
       # - run: kicad-cli version
-      # - name: install kikit
-      #   run: |
-      #     pip install kikit
-      #     pip install PcbDraw
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
@@ -34,7 +30,7 @@ jobs:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
       - run: mkdir build
-      - run: python kicad_releaser/releaser.py build
+      - run: python kicad_releaser/releaser.py main build
       
 
       
