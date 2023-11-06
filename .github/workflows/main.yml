@@ -35,6 +35,8 @@ jobs:
           path: kicad_releaser
       - run: cd main
       - run: mkdir build
+      - run: pwd
+      - run: ls
       - run: python ../kicad_releaser/releaser.py ../build
       
 
