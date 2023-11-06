@@ -10,7 +10,7 @@ jobs:
         run: |
           sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
           sudo apt update
-          sudo apt install kicad
+          sudo apt install kicad make
       - run: kicad-cli version
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -26,9 +26,9 @@ jobs:
         with:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
-      - run: mkdir build
-      - run: python kicad_releaser/releaser.py main build
-      - run: kikit present boardpage -h
+      - run: make build/test
+      #- run: python kicad_releaser/releaser.py main build
+      
       
 
       
