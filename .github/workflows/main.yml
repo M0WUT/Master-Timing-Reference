@@ -31,6 +31,7 @@ jobs:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
       - run: python kicad_releaser/releaser.py . build
+      - run: tree ~
       
       
 
