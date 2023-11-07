@@ -6,11 +6,11 @@ jobs:
   build-artifacts:
     runs-on: ubuntu-latest
     steps:
-      # - name: Install Kicad
-        # run: |
-        #   sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
-        #   sudo apt update
-        #   sudo apt install kicad
+      - name: Install Kicad
+        run: |
+          sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
+          sudo apt update
+          sudo apt install kicad
       - name: Install Kikit
         run: |
           pip install kikit
