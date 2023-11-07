@@ -33,9 +33,8 @@ jobs:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
       - run: mkdir build
-      - run: ls
-      - run: python kicad_releaser/releaser.py main build
-      - run: tree .
+      - name: Generate Webpage
+        run: python kicad_releaser/releaser.py main build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
