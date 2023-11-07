@@ -22,11 +22,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: main
-      - name: Checkout Interactive HTML BoM
-        uses: actions/checkout@v4
-        with:
-          repository: "openscopeproject/InteractiveHtmlBom"
-          path: ibom
+      # - name: Checkout Interactive HTML BoM
+      #   uses: actions/checkout@v4
+      #   with:
+      #     repository: "openscopeproject/InteractiveHtmlBom"
+      #     path: ibom
       - name: Checkout M0WUT Kicad Releaser
         uses: actions/checkout@v4
         with:
