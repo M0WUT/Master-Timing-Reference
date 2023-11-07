@@ -10,7 +10,8 @@ jobs:
         run: |
           sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
           sudo apt update
-          sudo apt install kicad make
+          sudo apt install kicad
+          sudo apt install tree
       - name: Install Kikit
         run: |
           pip install kikit
