@@ -6,12 +6,11 @@ jobs:
   build-artifacts:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Kicad
-        run: |
-          sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
-          sudo apt update
-          sudo apt install kicad
-          sudo apt install tree
+      # - name: Install Kicad
+        # run: |
+        #   sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
+        #   sudo apt update
+        #   sudo apt install kicad
       - name: Install Kikit
         run: |
           pip install kikit
@@ -34,6 +33,8 @@ jobs:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
       - run: mkdir build
+      - run: ls
+      - run: tree .
       - run: python kicad_releaser/releaser.py main build
       
       
