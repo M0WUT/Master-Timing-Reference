@@ -21,6 +21,8 @@ jobs:
       - run: kicad-cli version
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          path: main
       - name: Checkout Interactive HTML BoM
         uses: actions/checkout@v4
         with:
