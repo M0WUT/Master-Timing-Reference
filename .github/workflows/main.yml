@@ -30,8 +30,7 @@ jobs:
         with:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
-      - run: kikit present boardpage --help
-      #- run: python kicad_releaser/releaser.py main build
+      - run: python kicad_releaser/releaser.py main build
       
       
 
