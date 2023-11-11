@@ -28,7 +28,6 @@ jobs:
         with:
           repository: "M0WUT/kicad_libraries"
           path: wut-libraries
-          ssh-key: ${{ secrets.LIBRARIES_SSH_KEY }}
 
   #     # - name: Checkout Interactive HTML BoM
   #     #   uses: actions/checkout@v4
