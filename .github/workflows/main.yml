@@ -16,12 +16,20 @@ jobs:
           pip install kikit
           pip install mistune==2.0.5 
           pip install PcbDraw
-          sudo apt install make cmark xsltproc librsvg2-bin
+          sudo apt install make cmark xsltproc librsvg2-bin xvfb xdotool
       # - run: kicad-cli version
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           path: main
+
+      - name: Checkout M0WUT Libraries
+        uses: actions/checkout@v4
+        with:
+          repository: "M0WUT/kicad_libraries"
+          path: wut-libraries
+          token: ${{ secrets.ACTIONS_KEY }}
+
       # - name: Checkout Interactive HTML BoM
       #   uses: actions/checkout@v4
       #   with:
