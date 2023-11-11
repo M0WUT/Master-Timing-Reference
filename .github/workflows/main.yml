@@ -18,8 +18,8 @@ jobs:
           pip install kikit
           pip install mistune==2.0.5 
           sudo apt install make cmark xsltproc librsvg2-bin xdotool
-      - run: pip install PcbDraw
-      # - run: pip install git+https://github.com/M0WUT/PcbDraw@master
+      # - run: pip install PcbDraw
+      - run: pip install git+https://github.com/M0WUT/PcbDraw@master
       # - run: kicad-cli version
       - name: Checkout repo
         uses: actions/checkout@v4
