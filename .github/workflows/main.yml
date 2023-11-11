@@ -41,7 +41,10 @@ jobs:
         with:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
+      - run: mkdir -p .config/kicad/7.0
+      - run: cp -r kicad_releaser/kicad_settings .config/kicad/7.0
       - run: mkdir build
+      - run: tree .
       - name: Generate Webpage
         uses: coactions/setup-xvfb@v1
         with:
