@@ -11,8 +11,6 @@ jobs:
           sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
           sudo apt update
           sudo apt install kicad
-      - run: which kicad
-      - run: sudo find . -path "*/.config/kicad/7.0"
       - name: Install Kikit
         run: |
           pip install kikit
@@ -45,12 +43,10 @@ jobs:
       - run: mkdir -p ~/.config/kicad/7.0
       - run: cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
       - run: mkdir build
-      - run: tree -a .
       - name: Generate Webpage
         uses: coactions/setup-xvfb@v1
         with:
           run: python kicad_releaser/releaser.py main build
-      - run: tree .
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
