@@ -11,11 +11,11 @@ jobs:
           sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
           sudo apt update
           sudo apt install kicad
-      - name: Install Kikit
+      - name: Install 3rd party programs
         run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
       # - run: pip install git+https://github.com/M0WUT/PcbDraw@master
       # - run: kicad-cli version
-      - name: Checkout repo
+      - name: Checkout project repo
         uses: actions/checkout@v4
         with:
           path: main
@@ -36,14 +36,17 @@ jobs:
         with:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
-      - run: pip install -r kicad_releaser/requirements.txt
+      - name: Install Python dependencies
+        run: pip install -r kicad_releaser/requirements.txt
       - run: mkdir -p ~/.config/kicad/7.0
       - run: cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
       - run: mkdir build
+      - name: Move into repo directory
+        run: cd main
       - name: Generate Webpage
         uses: coactions/setup-xvfb@v1
         with:
-          run: python kicad_releaser/releaser.py main build
+          run: python kicad_releaser/releaser.py . ../build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
