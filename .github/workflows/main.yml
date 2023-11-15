@@ -29,21 +29,26 @@ jobs:
         with:
           repository: "openscopeproject/InteractiveHtmlBom"
           path: ibom
+
       - name: Checkout M0WUT Kicad Releaser
         uses: actions/checkout@v4
         with:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
+
       - name: Install Python dependencies
         run: pip install -r kicad_releaser/requirements.txt
+
       - run: mkdir -p ~/.config/kicad/7.0
       - run: cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
       - run: mkdir build
+
       - name: Generate Webpage
         uses: coactions/setup-xvfb@v1
         with:
           run: python ../kicad_releaser/releaser.py . ../build
           working-directory: main
+          
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
