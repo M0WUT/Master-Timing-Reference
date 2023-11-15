@@ -13,8 +13,6 @@ jobs:
           sudo apt install kicad
       - name: Install 3rd party programs
         run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
-      # - run: pip install git+https://github.com/M0WUT/PcbDraw@master
-      # - run: kicad-cli version
       - name: Checkout project repo
         uses: actions/checkout@v4
         with:
@@ -26,11 +24,11 @@ jobs:
           repository: "M0WUT/kicad_libraries"
           path: wut-libraries
 
-  #     # - name: Checkout Interactive HTML BoM
-  #     #   uses: actions/checkout@v4
-  #     #   with:
-  #     #     repository: "openscopeproject/InteractiveHtmlBom"
-  #     #     path: ibom
+      - name: Checkout Interactive HTML BoM
+        uses: actions/checkout@v4
+        with:
+          repository: "openscopeproject/InteractiveHtmlBom"
+          path: ibom
       - name: Checkout M0WUT Kicad Releaser
         uses: actions/checkout@v4
         with:
