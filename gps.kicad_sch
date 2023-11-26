@@ -2,7 +2,7 @@
 
   (uuid 5b9d99bf-938f-4dc8-bf5e-92c0c3242230)
 
-  (paper "A4")
+  (paper "A3")
 
   (lib_symbols
     (symbol "Accessories_WUT:TR_M3-_HFA2-S100-" (in_bom yes) (on_board no)

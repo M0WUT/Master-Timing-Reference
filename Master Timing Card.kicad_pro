@@ -452,7 +452,10 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "0V": "rgb(0, 255, 255)",
+      "3V3_PCIE": "rgb(255, 153, 0)"
+    },
     "netclass_assignments": {
       "/CM4 Interfaces/SD_CLK": "SDIO",
       "/CM4 Interfaces/SD_CMD": "SDIO",
@@ -573,6 +576,10 @@
     [
       "69eeaa75-0bdd-4e0a-b992-8a9cd01c4f2e",
       "Frequency Synthesiser 2"
+    ],
+    [
+      "d6642cbe-acae-4c5e-b434-aaa25d469dab",
+      "Power Supplies"
     ]
   ],
   "text_variables": {}

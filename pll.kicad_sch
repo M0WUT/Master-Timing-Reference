@@ -2,7 +2,7 @@
 
   (uuid 5b9d99bf-938f-4dc8-bf5e-92c0c3242230)
 
-  (paper "A4")
+  (paper "A3")
 
   (lib_symbols
     (symbol "Connector_WUT:Amphenol_U77-A1114-30L1" (in_bom yes) (on_board yes)

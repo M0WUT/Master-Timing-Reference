@@ -2,7 +2,7 @@
 
   (uuid 9f4df1c3-24f1-4745-8cff-561ac7682642)
 
-  (paper "A4")
+  (paper "A3")
 
   (lib_symbols
     (symbol "Auto_Library_WUT:KOA Speer RK73H1ETTP1000F" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)

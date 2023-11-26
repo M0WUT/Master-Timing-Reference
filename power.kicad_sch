@@ -1,0 +1,15 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 72317de3-1836-4465-8b5c-1272f17c29f3)
+
+  (paper "A3")
+
+  (lib_symbols
+  )
+
+
+  (text "lt8650s" (at 196.85 134.62 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b512956c-7e55-429c-b1c7-90196a43758a)
+  )
+)
