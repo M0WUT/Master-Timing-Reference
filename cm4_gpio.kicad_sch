@@ -761,7 +761,7 @@
       (property "Value" "104031-0811" (at 0 17.78 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "Connector_Card:microSD_HC_Molex_104031-0811" (at 1.27 1.27 0)
+      (property "Footprint" "Connector_WUT:microSD_HC_Molex_104031-0811" (at 1.27 1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/104/104031/1040310811_sd.pdf" (at 1.27 1.27 0)
@@ -3503,7 +3503,7 @@
     (property "Value" "104031-0811" (at 257.175 48.26 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_Card:microSD_HC_Molex_104031-0811" (at 257.81 66.04 0)
+    (property "Footprint" "Connector_WUT:microSD_HC_Molex_104031-0811" (at 257.81 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/104/104031/1040310811_sd.pdf" (at 257.81 66.04 0)
@@ -3553,7 +3553,7 @@
     (property "Datasheet" "" (at 171.45 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 018f8ca5-2886-4225-8e08-315bfa4a0a57))
+    (pin "1" (uuid 018f8ca5-2886-4225-8e08-315bfa4a0a58))
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/3fdc825c-420f-4918-ada8-75992123f8b4"
@@ -3752,7 +3752,7 @@
     (property "Datasheet" "" (at 181.61 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 018f8ca5-2886-4225-8e08-315bfa4a0a57))
+    (pin "1" (uuid 018f8ca5-2886-4225-8e08-315bfa4a0a59))
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/3fdc825c-420f-4918-ada8-75992123f8b4"

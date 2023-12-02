@@ -475,6 +475,8 @@
       "/Pi CM4 - HPIO/PCIE_PET0_P": "PCIe",
       "/Pi CM4 - HPIO/PCIE_REFCLK_N": "PCIe",
       "/Pi CM4 - HPIO/PCIE_REFCLK_P": "PCIe",
+      "Net-(CN14-DN1)": "USB",
+      "Net-(CN14-DP1)": "USB",
       "Net-(CN4B-Ethernet_Pair0_N)": "ETHERNET",
       "Net-(CN4B-Ethernet_Pair0_P)": "ETHERNET",
       "Net-(CN4B-Ethernet_Pair1_N)": "ETHERNET",
@@ -482,7 +484,9 @@
       "Net-(CN4B-Ethernet_Pair2_N)": "ETHERNET",
       "Net-(CN4B-Ethernet_Pair2_P)": "ETHERNET",
       "Net-(CN4B-Ethernet_Pair3_N)": "ETHERNET",
-      "Net-(CN4B-Ethernet_Pair3_P)": "ETHERNET"
+      "Net-(CN4B-Ethernet_Pair3_P)": "ETHERNET",
+      "Net-(CN5A-USB2_N)": "USB",
+      "Net-(CN5A-USB2_P)": "USB"
     },
     "netclass_patterns": []
   },
