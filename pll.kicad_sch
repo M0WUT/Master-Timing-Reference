@@ -5041,8 +5041,8 @@
     (property "Height" "0.4mm" (at 73.66 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid f6f5aa67-ec73-47bf-b4c4-b2f47c87f0ee))
-    (pin "1" (uuid 66084acd-25c3-49e0-b9a3-644d6934d195))
+    (pin "2" (uuid f6f5aa67-ec73-47bf-b4c4-b2f47c87f0ef))
+    (pin "1" (uuid 66084acd-25c3-49e0-b9a3-644d6934d196))
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/4066cd97-f2f5-4d90-9329-88af4fe2410f"
@@ -5527,8 +5527,8 @@
     (property "Height" "0.4mm" (at 76.2 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid e0393dcf-bc65-4a6a-b750-f33cae1c7066))
-    (pin "1" (uuid 75fb1a19-de75-4342-b931-c028ab859fa7))
+    (pin "2" (uuid e0393dcf-bc65-4a6a-b750-f33cae1c7067))
+    (pin "1" (uuid 75fb1a19-de75-4342-b931-c028ab859fa8))
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/4066cd97-f2f5-4d90-9329-88af4fe2410f"

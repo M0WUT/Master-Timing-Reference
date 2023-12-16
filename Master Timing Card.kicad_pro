@@ -435,7 +435,7 @@
       },
       {
         "bus_width": 6,
-        "clearance": 0.75,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -614,6 +614,7 @@
       "/RF6": "50R",
       "/RF7": "50R",
       "/RF8": "50R",
+      "Net-(CN1-In)": "50R",
       "Net-(CN15-In)": "50R",
       "Net-(R97-Pad1)": "50R",
       "Net-(R97-Pad2)": "50R"
