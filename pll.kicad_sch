@@ -7488,8 +7488,8 @@
     (property "Height" "0.4mm" (at 133.35 222.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 20960b67-c2c9-4bb5-acfa-478df5cea358))
-    (pin "1" (uuid 2cc88b4c-29f5-46e5-bb11-fefecaa71b18))
+    (pin "2" (uuid 20960b67-c2c9-4bb5-acfa-478df5cea359))
+    (pin "1" (uuid 2cc88b4c-29f5-46e5-bb11-fefecaa71b19))
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/4066cd97-f2f5-4d90-9329-88af4fe2410f"

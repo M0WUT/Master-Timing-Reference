@@ -435,7 +435,7 @@
       },
       {
         "bus_width": 6,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -616,8 +616,11 @@
       "/RF8": "50R",
       "Net-(CN1-In)": "50R",
       "Net-(CN15-In)": "50R",
+      "Net-(FL3-IN)": "50R",
+      "Net-(FL3-OUT)": "50R",
       "Net-(R97-Pad1)": "50R",
-      "Net-(R97-Pad2)": "50R"
+      "Net-(R97-Pad2)": "50R",
+      "Net-(U17-RF_IN)": "50R"
     },
     "netclass_patterns": []
   },
