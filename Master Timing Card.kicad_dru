@@ -1,0 +1,12 @@
+(version 1)
+
+(rule "CM4 Clearance"
+	(condition "A.InsideCourtyard('CN4') || A.InsideCourtyard('CN5')")
+	(constraint track_width (min 0.2mm) (opt 0.2mm) (max 0.2mm))
+	(constraint clearance (min 0.11mm))
+)
+(rule "RF plane clearance"
+	(layer outer)
+	(condition "A.Type == 'Zone' && B.NetClass != 'Default'")
+	(constraint clearance (min 1mm))
+)
