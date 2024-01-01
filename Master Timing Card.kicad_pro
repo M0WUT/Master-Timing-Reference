@@ -418,7 +418,7 @@
     "classes": [
       {
         "bus_width": 6,
-        "clearance": 0.18,
+        "clearance": 0.16,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -556,12 +556,6 @@
       "/CM4 Interfaces/ETHC_P": "ETHERNET",
       "/CM4 Interfaces/ETHD_N": "ETHERNET",
       "/CM4 Interfaces/ETHD_P": "ETHERNET",
-      "/CM4 Interfaces/SD_CLK": "SDIO",
-      "/CM4 Interfaces/SD_CMD": "SDIO",
-      "/CM4 Interfaces/SD_DAT0": "SDIO",
-      "/CM4 Interfaces/SD_DAT1": "SDIO",
-      "/CM4 Interfaces/SD_DAT2": "SDIO",
-      "/CM4 Interfaces/SD_DAT3": "SDIO",
       "/GPS/REF_CLK_N": "LVDS_100R",
       "/GPS/REF_CLK_P": "LVDS_100R",
       "/PLL and SFP/CLKA_N": "LVDS_100R",
