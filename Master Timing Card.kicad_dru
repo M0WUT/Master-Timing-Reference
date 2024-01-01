@@ -7,6 +7,12 @@
 )
 (rule "RF plane clearance"
 	(layer outer)
-	(condition "A.Type == 'Zone' && B.NetClass != 'Default'")
+	(condition "A.Type == 'Zone' && B.NetClass != 'Default' && A.Name != 'Keepout*'")
 	(constraint clearance (min 1mm))
 )
+(rule "Inner plane clearance"
+	(layer inner)
+	(condition "A.Type == 'Zone' && B.Type == 'Zone' && A.Net != B.Net")
+	(constraint clearance (min 0.5mm))
+)
+

@@ -2529,6 +2529,11 @@
     (uuid cee15c3c-01cb-4910-af7c-563c26b8a63e)
   )
 
+  (label "3V3_R" (at 243.84 212.09 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 7994c974-0d50-47dc-a92c-22582e3b5ae1)
+  )
+
   (hierarchical_label "PCIE_PWR_GOOD" (shape input) (at 251.46 78.74 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 0e827fd5-9bbc-4b82-b7ac-88c367345edc)
