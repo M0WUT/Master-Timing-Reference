@@ -3368,7 +3368,7 @@
   (symbol (lib_id "AAA_Preferred_WUT:KOA Speer RK73H1ETTP1003F") (at 266.7 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0605ac45-3551-49b8-8a92-305c0c360abc)
-    (property "Reference" "R112" (at 269.24 133.35 0)
+    (property "Reference" "R105" (at 269.24 133.35 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 269.24 135.89 0)
@@ -3397,7 +3397,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R112") (unit 1)
+          (reference "R105") (unit 1)
         )
       )
     )
@@ -3406,7 +3406,7 @@
   (symbol (lib_id "Transistor_WUT:Taiwan-Semiconductor_TSM085P03CV-RGG") (at 49.53 55.88 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ff428b8-b60b-45bd-ba2e-e1d720ed7de8)
-    (property "Reference" "Q6" (at 45.72 44.45 90) (do_not_autoplace)
+    (property "Reference" "Q5" (at 45.72 44.45 90) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TSM085P03CV RGG" (at 45.72 46.99 90) (do_not_autoplace)
@@ -3435,7 +3435,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "Q6") (unit 1)
+          (reference "Q5") (unit 1)
         )
       )
     )
@@ -3444,7 +3444,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 261.62 71.12 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 13604535-75bf-44a5-8031-eaba168aa60e)
-    (property "Reference" "#PWR0298" (at 261.62 71.12 0)
+    (property "Reference" "#PWR0290" (at 261.62 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 261.62 73.66 0) (do_not_autoplace)
@@ -3460,7 +3460,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0298") (unit 1)
+          (reference "#PWR0290") (unit 1)
         )
       )
     )
@@ -3469,7 +3469,7 @@
   (symbol (lib_id "Auto_Library_WUT:TDK C3216X5R1E476M160AC") (at 271.78 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 148070a4-f338-46da-8b5b-0f6a5adc5e9c)
-    (property "Reference" "C158" (at 274.32 62.23 0) (do_not_autoplace)
+    (property "Reference" "C157" (at 274.32 62.23 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47u" (at 274.32 64.77 0) (do_not_autoplace)
@@ -3504,7 +3504,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C158") (unit 1)
+          (reference "C157") (unit 1)
         )
       )
     )
@@ -3513,7 +3513,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 177.8 158.75 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 14d0ed91-6f25-4277-a896-d01391c28657)
-    (property "Reference" "#PWR0288" (at 177.8 158.75 0)
+    (property "Reference" "#PWR0280" (at 177.8 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 177.8 161.29 0) (do_not_autoplace)
@@ -3529,7 +3529,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0288") (unit 1)
+          (reference "#PWR0280") (unit 1)
         )
       )
     )
@@ -3538,7 +3538,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP6R80F") (at 351.79 88.9 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 151d38d6-1662-4598-bf39-a30091639b7f)
-    (property "Reference" "R124" (at 351.79 82.55 90)
+    (property "Reference" "R117" (at 351.79 82.55 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "6R8" (at 351.79 85.09 90)
@@ -3567,7 +3567,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R124") (unit 1)
+          (reference "R117") (unit 1)
         )
       )
     )
@@ -3576,7 +3576,7 @@
   (symbol (lib_id "AAA_Preferred_WUT:KOA Speer RK73H1ETTP1002F") (at 104.14 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1632e35a-f31b-41fd-b959-8a8e1f7bfb11)
-    (property "Reference" "R103" (at 106.68 123.19 0)
+    (property "Reference" "R96" (at 106.68 123.19 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 106.68 125.73 0)
@@ -3605,7 +3605,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R103") (unit 1)
+          (reference "R96") (unit 1)
         )
       )
     )
@@ -3614,7 +3614,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 166.37 146.05 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 17eea5ab-41bb-45b3-834d-268622e7d960)
-    (property "Reference" "#PWR0285" (at 166.37 146.05 0)
+    (property "Reference" "#PWR0277" (at 166.37 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 166.37 148.59 0) (do_not_autoplace)
@@ -3630,7 +3630,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0285") (unit 1)
+          (reference "#PWR0277") (unit 1)
         )
       )
     )
@@ -3639,7 +3639,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 115.57 130.81 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 19f60af0-2758-4f50-a4f8-d8dbfa4dc454)
-    (property "Reference" "#PWR0280" (at 115.57 130.81 0)
+    (property "Reference" "#PWR0272" (at 115.57 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 115.57 133.35 0) (do_not_autoplace)
@@ -3655,7 +3655,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0280") (unit 1)
+          (reference "#PWR0272") (unit 1)
         )
       )
     )
@@ -3740,7 +3740,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kemet C0402C221G5GACTU") (at 181.61 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 23d8e46c-b94c-4985-9280-c92f029a32cf)
-    (property "Reference" "C153" (at 184.15 74.93 0) (do_not_autoplace)
+    (property "Reference" "C152" (at 184.15 74.93 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "220p" (at 184.15 77.47 0) (do_not_autoplace)
@@ -3775,7 +3775,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C153") (unit 1)
+          (reference "C152") (unit 1)
         )
       )
     )
@@ -3784,7 +3784,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 118.11 68.58 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 250403a3-230a-46d4-ae5b-e89606fab226)
-    (property "Reference" "#PWR0281" (at 118.11 68.58 0)
+    (property "Reference" "#PWR0273" (at 118.11 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 118.11 71.12 0) (do_not_autoplace)
@@ -3800,7 +3800,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0281") (unit 1)
+          (reference "#PWR0273") (unit 1)
         )
       )
     )
@@ -3809,7 +3809,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP4701F") (at 327.66 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 26ffad7a-7acf-4335-8f2f-7183f8a54c8e)
-    (property "Reference" "R120" (at 330.2 102.87 0)
+    (property "Reference" "R113" (at 330.2 102.87 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4k7" (at 330.2 105.41 0)
@@ -3838,7 +3838,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R120") (unit 1)
+          (reference "R113") (unit 1)
         )
       )
     )
@@ -3847,7 +3847,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 181.61 116.84 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 279c6d37-a656-4b8c-923f-c7dbeec26e19)
-    (property "Reference" "#PWR0290" (at 181.61 116.84 0)
+    (property "Reference" "#PWR0282" (at 181.61 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 181.61 119.38 0) (do_not_autoplace)
@@ -3863,7 +3863,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0290") (unit 1)
+          (reference "#PWR0282") (unit 1)
         )
       )
     )
@@ -4001,7 +4001,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 307.34 123.19 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 2c0f308f-aaf9-4106-bcb7-c584fc14a124)
-    (property "Reference" "#PWR0304" (at 307.34 123.19 0)
+    (property "Reference" "#PWR0296" (at 307.34 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 307.34 125.73 0) (do_not_autoplace)
@@ -4017,7 +4017,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0304") (unit 1)
+          (reference "#PWR0296") (unit 1)
         )
       )
     )
@@ -4026,7 +4026,7 @@
   (symbol (lib_id "Power_WUT:5V0_PI") (at 327.66 57.15 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 2de11da0-ce89-429c-ace4-75312c51ad6b)
-    (property "Reference" "#PWR0305" (at 327.025 60.325 0)
+    (property "Reference" "#PWR0297" (at 327.025 60.325 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "5V0_PI" (at 327.66 53.34 0) (do_not_autoplace)
@@ -4042,7 +4042,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0305") (unit 1)
+          (reference "#PWR0297") (unit 1)
         )
       )
     )
@@ -4084,7 +4084,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kemet C0402C103K4PACTU") (at 170.18 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3f207f05-b309-4c77-b773-5e23b54d5d3e)
-    (property "Reference" "C151" (at 172.72 74.93 0) (do_not_autoplace)
+    (property "Reference" "C150" (at 172.72 74.93 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10n" (at 172.72 77.47 0) (do_not_autoplace)
@@ -4119,7 +4119,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C151") (unit 1)
+          (reference "C150") (unit 1)
         )
       )
     )
@@ -4128,7 +4128,7 @@
   (symbol (lib_id "AAA_Preferred_WUT:Yageo CC0402KRX7R8BB104") (at 199.39 194.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3ff02061-0130-415d-bb2a-59270a53fd3b)
-    (property "Reference" "C155" (at 201.93 191.77 0) (do_not_autoplace)
+    (property "Reference" "C154" (at 201.93 191.77 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 201.93 194.31 0) (do_not_autoplace)
@@ -4163,7 +4163,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C155") (unit 1)
+          (reference "C154") (unit 1)
         )
       )
     )
@@ -4172,7 +4172,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kemet C0402C103K4PACTU") (at 170.18 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 429dff77-55e9-48b6-946e-b73ebaa5ae64)
-    (property "Reference" "C152" (at 172.72 107.95 0) (do_not_autoplace)
+    (property "Reference" "C151" (at 172.72 107.95 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10n" (at 172.72 110.49 0) (do_not_autoplace)
@@ -4207,7 +4207,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C152") (unit 1)
+          (reference "C151") (unit 1)
         )
       )
     )
@@ -4216,7 +4216,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 306.07 82.55 0) (unit 1)
     (in_bom no) (on_board no) (dnp no)
     (uuid 46ddbd12-60a3-4b6f-a2ea-6384e5ffec02)
-    (property "Reference" "#PWR0303" (at 306.07 82.55 0)
+    (property "Reference" "#PWR0295" (at 306.07 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 306.07 85.09 0) (do_not_autoplace)
@@ -4232,7 +4232,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0303") (unit 1)
+          (reference "#PWR0295") (unit 1)
         )
       )
     )
@@ -4241,7 +4241,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP1203F") (at 158.75 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 47c17ee3-817d-4c43-a332-f61a6c474b24)
-    (property "Reference" "R104" (at 161.29 59.69 0)
+    (property "Reference" "R97" (at 161.29 59.69 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "120k" (at 161.29 62.23 0)
@@ -4270,7 +4270,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R104") (unit 1)
+          (reference "R97") (unit 1)
         )
       )
     )
@@ -4279,7 +4279,7 @@
   (symbol (lib_id "Power_WUT:12V") (at 16.51 53.34 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 4c8be4c1-8afb-44b9-926f-aaeeb044dea3)
-    (property "Reference" "#PWR0274" (at 15.875 56.515 0)
+    (property "Reference" "#PWR0266" (at 15.875 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "12V" (at 16.51 49.53 0) (do_not_autoplace)
@@ -4295,7 +4295,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0274") (unit 1)
+          (reference "#PWR0266") (unit 1)
         )
       )
     )
@@ -4304,7 +4304,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 199.39 199.39 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 5037a23c-0141-4d10-b5c1-96491818f4f1)
-    (property "Reference" "#PWR0293" (at 199.39 199.39 0)
+    (property "Reference" "#PWR0285" (at 199.39 199.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 199.39 201.93 0) (do_not_autoplace)
@@ -4320,7 +4320,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0293") (unit 1)
+          (reference "#PWR0285") (unit 1)
         )
       )
     )
@@ -4329,7 +4329,7 @@
   (symbol (lib_id "Power_WUT:PWR_FLAG") (at 311.15 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 53ea0fb5-2ec4-414a-8a79-e409920f245a)
-    (property "Reference" "#FLG030" (at 311.15 56.515 0)
+    (property "Reference" "#FLG029" (at 311.15 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 311.15 53.34 0)
@@ -4345,7 +4345,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#FLG030") (unit 1)
+          (reference "#FLG029") (unit 1)
         )
       )
     )
@@ -4354,7 +4354,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP1603F") (at 306.07 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 55e0408b-765f-4a1e-8333-6d94bc8869f9)
-    (property "Reference" "R115" (at 308.61 63.5 0)
+    (property "Reference" "R108" (at 308.61 63.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "160k" (at 308.61 66.04 0)
@@ -4383,7 +4383,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R115") (unit 1)
+          (reference "R108") (unit 1)
         )
       )
     )
@@ -4439,7 +4439,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 158.75 77.47 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 577e524d-c770-41bc-9ce6-aa5d066a07af)
-    (property "Reference" "#PWR0284" (at 158.75 77.47 0)
+    (property "Reference" "#PWR0276" (at 158.75 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 158.75 80.01 0) (do_not_autoplace)
@@ -4455,7 +4455,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0284") (unit 1)
+          (reference "#PWR0276") (unit 1)
         )
       )
     )
@@ -4464,7 +4464,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP3002F") (at 306.07 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5ca40213-2b23-45a2-92b6-4670dc4e0534)
-    (property "Reference" "R116" (at 308.61 74.93 0)
+    (property "Reference" "R109" (at 308.61 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "30k" (at 308.61 77.47 0)
@@ -4493,7 +4493,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R116") (unit 1)
+          (reference "R109") (unit 1)
         )
       )
     )
@@ -4502,7 +4502,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP1502F") (at 189.23 71.12 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d80af37-a72e-499c-9200-0d70f1ff4556)
-    (property "Reference" "R108" (at 185.42 69.85 90) (do_not_autoplace)
+    (property "Reference" "R101" (at 185.42 69.85 90) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "15k" (at 193.04 69.85 90) (do_not_autoplace)
@@ -4531,7 +4531,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R108") (unit 1)
+          (reference "R101") (unit 1)
         )
       )
     )
@@ -4540,7 +4540,7 @@
   (symbol (lib_id "Power_WUT:3V3") (at 238.76 191.77 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 5da2c0ce-c7f5-4917-a3d7-ed98f74380fb)
-    (property "Reference" "#PWR0297" (at 238.125 194.945 0)
+    (property "Reference" "#PWR0289" (at 238.125 194.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3V3" (at 238.76 187.96 0) (do_not_autoplace)
@@ -4556,7 +4556,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0297") (unit 1)
+          (reference "#PWR0289") (unit 1)
         )
       )
     )
@@ -4565,7 +4565,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP1502F") (at 307.34 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6497b93a-d150-429b-8285-0a78c15dca92)
-    (property "Reference" "R118" (at 309.88 115.57 0)
+    (property "Reference" "R111" (at 309.88 115.57 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "15k" (at 309.88 118.11 0)
@@ -4594,7 +4594,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R118") (unit 1)
+          (reference "R111") (unit 1)
         )
       )
     )
@@ -4603,7 +4603,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP4702F") (at 307.34 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 64d78d68-3a91-4711-b119-f059ba7167e4)
-    (property "Reference" "R117" (at 309.88 104.14 0)
+    (property "Reference" "R110" (at 309.88 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47k" (at 309.88 106.68 0)
@@ -4632,7 +4632,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R117") (unit 1)
+          (reference "R110") (unit 1)
         )
       )
     )
@@ -4641,7 +4641,7 @@
   (symbol (lib_id "Auto_Library_WUT:Wurth Elektronik_875575553004") (at 118.11 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 64df52db-d9a5-41a4-8cce-143348f2680e)
-    (property "Reference" "C147" (at 120.65 59.69 0) (do_not_autoplace)
+    (property "Reference" "C146" (at 120.65 59.69 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "220u" (at 120.65 62.23 0) (do_not_autoplace)
@@ -4676,7 +4676,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C147") (unit 1)
+          (reference "C146") (unit 1)
         )
       )
     )
@@ -4720,7 +4720,7 @@
   (symbol (lib_id "Auto_Library_WUT:Panasonic ERJB1CFR056U ") (at 293.37 58.42 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6bd43a2c-9951-4eaa-bc22-6b4e7276b45b)
-    (property "Reference" "R113" (at 293.37 52.07 90)
+    (property "Reference" "R106" (at 293.37 52.07 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56m" (at 293.37 54.61 90)
@@ -4749,7 +4749,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R113") (unit 1)
+          (reference "R106") (unit 1)
         )
       )
     )
@@ -4758,7 +4758,7 @@
   (symbol (lib_id "AAA_Preferred_WUT:KOA Speer RK73Z1ETTP") (at 177.8 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 721a8c08-403c-4778-b68b-ec954782eab0)
-    (property "Reference" "R107" (at 180.34 151.13 0)
+    (property "Reference" "R100" (at 180.34 151.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0R0" (at 180.34 153.67 0)
@@ -4787,7 +4787,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R107") (unit 1)
+          (reference "R100") (unit 1)
         )
       )
     )
@@ -4796,7 +4796,7 @@
   (symbol (lib_id "AAA_Preferred_WUT:KOA Speer RK73H1ETTP1002F") (at 49.53 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7685dcdd-b1ac-491d-aeef-bb899d5a3071)
-    (property "Reference" "R101" (at 52.07 74.93 0)
+    (property "Reference" "R94" (at 52.07 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 52.07 77.47 0)
@@ -4825,7 +4825,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R101") (unit 1)
+          (reference "R94") (unit 1)
         )
       )
     )
@@ -4872,7 +4872,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP6R80F") (at 351.79 25.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7d3b4e77-7511-46af-95d1-897b80ab4d3c)
-    (property "Reference" "R121" (at 351.79 19.05 90)
+    (property "Reference" "R114" (at 351.79 19.05 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "6R8" (at 351.79 21.59 90)
@@ -4901,7 +4901,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R121") (unit 1)
+          (reference "R114") (unit 1)
         )
       )
     )
@@ -4910,7 +4910,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 148.59 102.87 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 7ddbb008-8aeb-45a1-8e49-8c349783dcbf)
-    (property "Reference" "#PWR0283" (at 148.59 102.87 0)
+    (property "Reference" "#PWR0275" (at 148.59 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 148.59 105.41 0) (do_not_autoplace)
@@ -4926,7 +4926,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0283") (unit 1)
+          (reference "#PWR0275") (unit 1)
         )
       )
     )
@@ -4935,7 +4935,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 271.78 111.76 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 8031b00f-696a-4a25-9571-f732d463374b)
-    (property "Reference" "#PWR0302" (at 271.78 111.76 0)
+    (property "Reference" "#PWR0294" (at 271.78 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 271.78 114.3 0) (do_not_autoplace)
@@ -4951,7 +4951,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0302") (unit 1)
+          (reference "#PWR0294") (unit 1)
         )
       )
     )
@@ -4960,7 +4960,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 261.62 111.76 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 815c9058-c57a-40c7-b64f-e26aa82b53f5)
-    (property "Reference" "#PWR0299" (at 261.62 111.76 0)
+    (property "Reference" "#PWR0291" (at 261.62 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 261.62 114.3 0) (do_not_autoplace)
@@ -4976,7 +4976,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0299") (unit 1)
+          (reference "#PWR0291") (unit 1)
         )
       )
     )
@@ -4985,7 +4985,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 210.82 149.86 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 826d2592-fb28-4a28-abe2-4943e7373cb7)
-    (property "Reference" "#PWR0295" (at 210.82 149.86 0)
+    (property "Reference" "#PWR0287" (at 210.82 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 210.82 152.4 0) (do_not_autoplace)
@@ -5001,7 +5001,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0295") (unit 1)
+          (reference "#PWR0287") (unit 1)
         )
       )
     )
@@ -5010,7 +5010,7 @@
   (symbol (lib_id "AAA_Preferred_WUT:KOA Speer RK73Z1ETTP") (at 177.8 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 8d76f4a8-79a0-4db9-87f2-2ce8502394dc)
-    (property "Reference" "R106" (at 180.34 138.43 0)
+    (property "Reference" "R99" (at 180.34 138.43 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0R0" (at 180.34 140.97 0)
@@ -5039,7 +5039,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R106") (unit 1)
+          (reference "R99") (unit 1)
         )
       )
     )
@@ -5048,7 +5048,7 @@
   (symbol (lib_id "Power_WUT:3V3_PCIE") (at 327.66 96.52 0) (unit 1)
     (in_bom no) (on_board no) (dnp no)
     (uuid 8e5fbcf8-36cc-438a-8376-d4615d04926b)
-    (property "Reference" "#PWR0307" (at 327.025 99.695 0)
+    (property "Reference" "#PWR0299" (at 327.025 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3V3_PCIE" (at 327.66 92.71 0) (do_not_autoplace)
@@ -5064,7 +5064,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0307") (unit 1)
+          (reference "#PWR0299") (unit 1)
         )
       )
     )
@@ -5073,7 +5073,7 @@
   (symbol (lib_id "Power_WUT:3V3") (at 266.7 129.54 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 92f7e49c-8f6a-477f-ba91-6c1bbb595f6d)
-    (property "Reference" "#PWR0300" (at 266.065 132.715 0)
+    (property "Reference" "#PWR0292" (at 266.065 132.715 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3V3" (at 266.7 125.73 0) (do_not_autoplace)
@@ -5089,7 +5089,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0300") (unit 1)
+          (reference "#PWR0292") (unit 1)
         )
       )
     )
@@ -5098,7 +5098,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP1502F") (at 189.23 104.14 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 94fe16c5-c2d2-41a7-81f5-f9dd12ee997a)
-    (property "Reference" "R109" (at 185.42 102.87 90) (do_not_autoplace)
+    (property "Reference" "R102" (at 185.42 102.87 90) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "15k" (at 193.04 102.87 90) (do_not_autoplace)
@@ -5127,7 +5127,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R109") (unit 1)
+          (reference "R102") (unit 1)
         )
       )
     )
@@ -5136,7 +5136,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP1502F") (at 190.5 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9503e8e5-cc59-4948-b82b-f0b2d67f129d)
-    (property "Reference" "R110" (at 193.04 138.43 0)
+    (property "Reference" "R103" (at 193.04 138.43 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "15k" (at 193.04 140.97 0)
@@ -5165,7 +5165,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R110") (unit 1)
+          (reference "R103") (unit 1)
         )
       )
     )
@@ -5174,7 +5174,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kemet C0402C105K4PACTU") (at 166.37 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 959aeda5-e53c-4179-81bb-e87ced3cf66d)
-    (property "Reference" "C150" (at 168.91 137.16 0) (do_not_autoplace)
+    (property "Reference" "C149" (at 168.91 137.16 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 168.91 139.7 0) (do_not_autoplace)
@@ -5209,7 +5209,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C150") (unit 1)
+          (reference "C149") (unit 1)
         )
       )
     )
@@ -5218,7 +5218,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 49.53 82.55 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 96479596-dce8-44b9-8f29-5b9ec4e0244d)
-    (property "Reference" "#PWR0275" (at 49.53 82.55 0)
+    (property "Reference" "#PWR0267" (at 49.53 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 49.53 85.09 0) (do_not_autoplace)
@@ -5234,7 +5234,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0275") (unit 1)
+          (reference "#PWR0267") (unit 1)
         )
       )
     )
@@ -5243,7 +5243,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 104.14 130.81 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid 9bee79ca-e13b-48ef-9c83-328cbbbfac83)
-    (property "Reference" "#PWR0279" (at 104.14 130.81 0)
+    (property "Reference" "#PWR0271" (at 104.14 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 104.14 133.35 0) (do_not_autoplace)
@@ -5259,7 +5259,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0279") (unit 1)
+          (reference "#PWR0271") (unit 1)
         )
       )
     )
@@ -5300,7 +5300,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kyocera AVX 1206DD106MAT2A") (at 148.59 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9eff359d-1876-4dc6-aa60-2ba1eec907fb)
-    (property "Reference" "C149" (at 151.13 93.98 0) (do_not_autoplace)
+    (property "Reference" "C148" (at 151.13 93.98 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 151.13 96.52 0) (do_not_autoplace)
@@ -5335,7 +5335,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C149") (unit 1)
+          (reference "C148") (unit 1)
         )
       )
     )
@@ -5344,7 +5344,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP4701F") (at 327.66 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a7a7a21c-c79d-4cea-a1a2-6b88244ca989)
-    (property "Reference" "R119" (at 330.2 62.23 0)
+    (property "Reference" "R112" (at 330.2 62.23 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4k7" (at 330.2 64.77 0)
@@ -5373,7 +5373,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R119") (unit 1)
+          (reference "R112") (unit 1)
         )
       )
     )
@@ -5382,7 +5382,7 @@
   (symbol (lib_id "Power_WUT:3V3") (at 195.58 186.69 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid a9a33881-a95d-4a09-ba14-74728109e694)
-    (property "Reference" "#PWR0292" (at 194.945 189.865 0)
+    (property "Reference" "#PWR0284" (at 194.945 189.865 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "3V3" (at 195.58 182.88 0) (do_not_autoplace)
@@ -5398,7 +5398,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0292") (unit 1)
+          (reference "#PWR0284") (unit 1)
         )
       )
     )
@@ -5407,7 +5407,7 @@
   (symbol (lib_id "AAA_Preferred_WUT:KOA Speer RK73H1ETTP1002F") (at 158.75 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid aa0c2d61-148d-4ec0-82db-0b54ee5c436b)
-    (property "Reference" "R105" (at 161.29 69.85 0)
+    (property "Reference" "R98" (at 161.29 69.85 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 161.29 72.39 0)
@@ -5436,7 +5436,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R105") (unit 1)
+          (reference "R98") (unit 1)
         )
       )
     )
@@ -5445,7 +5445,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 181.61 83.82 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid aa387065-c7ad-476c-a87e-703ea43fd370)
-    (property "Reference" "#PWR0289" (at 181.61 83.82 0)
+    (property "Reference" "#PWR0281" (at 181.61 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 181.61 86.36 0) (do_not_autoplace)
@@ -5461,7 +5461,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0289") (unit 1)
+          (reference "#PWR0281") (unit 1)
         )
       )
     )
@@ -5470,7 +5470,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP6R80F") (at 351.79 78.74 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid aaceef4b-2c2d-4491-9944-c072efa6af51)
-    (property "Reference" "R123" (at 351.79 72.39 90)
+    (property "Reference" "R116" (at 351.79 72.39 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "6R8" (at 351.79 74.93 90)
@@ -5499,7 +5499,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R123") (unit 1)
+          (reference "R116") (unit 1)
         )
       )
     )
@@ -5508,7 +5508,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP6R80F") (at 351.79 35.56 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b03b47e0-0356-417d-b25f-2bf24e8a9c8a)
-    (property "Reference" "R122" (at 351.79 29.21 90)
+    (property "Reference" "R115" (at 351.79 29.21 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "6R8" (at 351.79 31.75 90)
@@ -5537,7 +5537,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R122") (unit 1)
+          (reference "R115") (unit 1)
         )
       )
     )
@@ -5546,7 +5546,7 @@
   (symbol (lib_id "Power_WUT:PWR_FLAG") (at 121.92 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b33928ed-df1e-46d1-a5c1-226487ba9eaf)
-    (property "Reference" "#FLG029" (at 121.92 53.975 0)
+    (property "Reference" "#FLG028" (at 121.92 53.975 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 121.92 52.07 0)
@@ -5562,7 +5562,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#FLG029") (unit 1)
+          (reference "#FLG028") (unit 1)
         )
       )
     )
@@ -5571,7 +5571,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 190.5 146.05 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid bb0255f2-29f2-4914-a2f2-1ab9212e4b80)
-    (property "Reference" "#PWR0291" (at 190.5 146.05 0)
+    (property "Reference" "#PWR0283" (at 190.5 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 190.5 148.59 0) (do_not_autoplace)
@@ -5587,7 +5587,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0291") (unit 1)
+          (reference "#PWR0283") (unit 1)
         )
       )
     )
@@ -5596,7 +5596,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 327.66 118.11 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid be248f9d-92a0-46ed-abf7-15fce30c7b5a)
-    (property "Reference" "#PWR0308" (at 327.66 118.11 0)
+    (property "Reference" "#PWR0300" (at 327.66 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 327.66 120.65 0) (do_not_autoplace)
@@ -5612,7 +5612,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0308") (unit 1)
+          (reference "#PWR0300") (unit 1)
         )
       )
     )
@@ -5621,7 +5621,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 219.71 238.76 0) (unit 1)
     (in_bom no) (on_board no) (dnp no)
     (uuid c06d35a6-e874-4f9a-98c3-a8770d1a6652)
-    (property "Reference" "#PWR0296" (at 219.71 238.76 0)
+    (property "Reference" "#PWR0288" (at 219.71 238.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 219.71 241.3 0) (do_not_autoplace)
@@ -5637,7 +5637,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0296") (unit 1)
+          (reference "#PWR0288") (unit 1)
         )
       )
     )
@@ -5646,7 +5646,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 85.09 62.23 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid c35ed0d4-6fef-4233-bc74-b17f96247332)
-    (property "Reference" "#PWR0277" (at 85.09 62.23 0)
+    (property "Reference" "#PWR0269" (at 85.09 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 85.09 64.77 0) (do_not_autoplace)
@@ -5662,7 +5662,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0277") (unit 1)
+          (reference "#PWR0269") (unit 1)
         )
       )
     )
@@ -5671,7 +5671,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 170.18 116.84 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid c7fe3440-3a2c-4e30-b9cb-e7f09cf9bcd1)
-    (property "Reference" "#PWR0287" (at 170.18 116.84 0)
+    (property "Reference" "#PWR0279" (at 170.18 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 170.18 119.38 0) (do_not_autoplace)
@@ -5687,7 +5687,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0287") (unit 1)
+          (reference "#PWR0279") (unit 1)
         )
       )
     )
@@ -5696,7 +5696,7 @@
   (symbol (lib_id "Auto_Library_WUT:TDK C3216X5R1E476M160AC") (at 261.62 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cd743fa0-5b37-4ebb-8d32-837454018629)
-    (property "Reference" "C156" (at 264.16 62.23 0) (do_not_autoplace)
+    (property "Reference" "C155" (at 264.16 62.23 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47u" (at 264.16 64.77 0) (do_not_autoplace)
@@ -5731,7 +5731,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C156") (unit 1)
+          (reference "C155") (unit 1)
         )
       )
     )
@@ -5740,7 +5740,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kemet C0402C100D4GACTU") (at 316.23 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d1c258f2-6862-4240-9c8c-049cde9c6134)
-    (property "Reference" "C160" (at 318.77 62.23 0) (do_not_autoplace)
+    (property "Reference" "C159" (at 318.77 62.23 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10p" (at 318.77 64.77 0) (do_not_autoplace)
@@ -5775,7 +5775,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C160") (unit 1)
+          (reference "C159") (unit 1)
         )
       )
     )
@@ -5784,7 +5784,7 @@
   (symbol (lib_id "Auto_Library_WUT:TDK C3216X5R1E476M160AC") (at 261.62 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d22e95aa-c656-4b09-9af2-c7fb4ee491d9)
-    (property "Reference" "C157" (at 264.16 102.87 0) (do_not_autoplace)
+    (property "Reference" "C156" (at 264.16 102.87 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47u" (at 264.16 105.41 0) (do_not_autoplace)
@@ -5819,7 +5819,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C157") (unit 1)
+          (reference "C156") (unit 1)
         )
       )
     )
@@ -5828,7 +5828,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kyocera AVX 1206DD106MAT2A") (at 148.59 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d2c743cc-005d-490f-ba3b-a5a15868b9fc)
-    (property "Reference" "C148" (at 151.13 60.96 0) (do_not_autoplace)
+    (property "Reference" "C147" (at 151.13 60.96 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10u" (at 151.13 63.5 0) (do_not_autoplace)
@@ -5863,7 +5863,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C148") (unit 1)
+          (reference "C147") (unit 1)
         )
       )
     )
@@ -5872,7 +5872,7 @@
   (symbol (lib_id "AAA_Preferred_WUT:Yageo CC0402KRX7R8BB104") (at 115.57 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d377019e-9daf-4999-b26c-9970832b0334)
-    (property "Reference" "C146" (at 118.11 121.92 0) (do_not_autoplace)
+    (property "Reference" "C145" (at 118.11 121.92 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 118.11 124.46 0) (do_not_autoplace)
@@ -5907,7 +5907,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C146") (unit 1)
+          (reference "C145") (unit 1)
         )
       )
     )
@@ -5916,7 +5916,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 327.66 77.47 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid d6b595a0-0576-4531-afaf-e890391b3f5f)
-    (property "Reference" "#PWR0306" (at 327.66 77.47 0)
+    (property "Reference" "#PWR0298" (at 327.66 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 327.66 80.01 0) (do_not_autoplace)
@@ -5932,7 +5932,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0306") (unit 1)
+          (reference "#PWR0298") (unit 1)
         )
       )
     )
@@ -5941,7 +5941,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 170.18 83.82 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid da822ac7-5c47-497f-80e8-bda1fdf87395)
-    (property "Reference" "#PWR0286" (at 170.18 83.82 0)
+    (property "Reference" "#PWR0278" (at 170.18 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 170.18 86.36 0) (do_not_autoplace)
@@ -5957,7 +5957,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0286") (unit 1)
+          (reference "#PWR0278") (unit 1)
         )
       )
     )
@@ -5966,7 +5966,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 204.47 231.14 0) (unit 1)
     (in_bom no) (on_board no) (dnp no)
     (uuid dba648d4-3019-41a5-b2c8-2090643e9f4c)
-    (property "Reference" "#PWR0294" (at 204.47 231.14 0)
+    (property "Reference" "#PWR0286" (at 204.47 231.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 204.47 233.68 0) (do_not_autoplace)
@@ -5982,7 +5982,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0294") (unit 1)
+          (reference "#PWR0286") (unit 1)
         )
       )
     )
@@ -5991,7 +5991,7 @@
   (symbol (lib_id "Auto_Library_WUT:Panasonic ERJB1CFR056U ") (at 293.37 99.06 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dc1703b5-66c9-4cdb-841a-2a11523f19a7)
-    (property "Reference" "R114" (at 293.37 92.71 90)
+    (property "Reference" "R107" (at 293.37 92.71 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56m" (at 293.37 95.25 90)
@@ -6020,7 +6020,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R114") (unit 1)
+          (reference "R107") (unit 1)
         )
       )
     )
@@ -6029,7 +6029,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kemet C0402C100D4GACTU") (at 317.5 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ddde0662-c09e-4392-a448-d1c18b959773)
-    (property "Reference" "C161" (at 320.04 102.87 0) (do_not_autoplace)
+    (property "Reference" "C160" (at 320.04 102.87 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10p" (at 320.04 105.41 0) (do_not_autoplace)
@@ -6064,7 +6064,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C161") (unit 1)
+          (reference "C160") (unit 1)
         )
       )
     )
@@ -6073,7 +6073,7 @@
   (symbol (lib_id "Auto_Library_WUT:TDK C3216X5R1E476M160AC") (at 271.78 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dfbb1988-5fac-4eba-89a1-921fbfc526ee)
-    (property "Reference" "C159" (at 274.32 102.87 0) (do_not_autoplace)
+    (property "Reference" "C158" (at 274.32 102.87 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47u" (at 274.32 105.41 0) (do_not_autoplace)
@@ -6108,7 +6108,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C159") (unit 1)
+          (reference "C158") (unit 1)
         )
       )
     )
@@ -6117,7 +6117,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kemet C0402C221G5GACTU") (at 181.61 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e045f036-b002-405d-a935-0528fd0c0f33)
-    (property "Reference" "C154" (at 184.15 107.95 0) (do_not_autoplace)
+    (property "Reference" "C153" (at 184.15 107.95 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "220p" (at 184.15 110.49 0) (do_not_autoplace)
@@ -6152,7 +6152,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C154") (unit 1)
+          (reference "C153") (unit 1)
         )
       )
     )
@@ -6193,7 +6193,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kemet C0402C105K4PACTU") (at 358.14 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e418e488-603f-42e6-8395-6a6e396820a9)
-    (property "Reference" "C163" (at 360.68 81.28 0) (do_not_autoplace)
+    (property "Reference" "C162" (at 360.68 81.28 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 360.68 83.82 0) (do_not_autoplace)
@@ -6228,7 +6228,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C163") (unit 1)
+          (reference "C162") (unit 1)
         )
       )
     )
@@ -6237,7 +6237,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 72.39 78.74 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid e85dc18a-62db-4003-8f96-720b257716eb)
-    (property "Reference" "#PWR0276" (at 72.39 78.74 0)
+    (property "Reference" "#PWR0268" (at 72.39 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 72.39 81.28 0) (do_not_autoplace)
@@ -6253,7 +6253,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0276") (unit 1)
+          (reference "#PWR0268") (unit 1)
         )
       )
     )
@@ -6262,7 +6262,7 @@
   (symbol (lib_id "Auto_Library_WUT:Kemet C0402C105K4PACTU") (at 358.14 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eab9d535-4454-4555-bcf9-5884e565eacc)
-    (property "Reference" "C162" (at 360.68 27.94 0) (do_not_autoplace)
+    (property "Reference" "C161" (at 360.68 27.94 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 360.68 30.48 0) (do_not_autoplace)
@@ -6297,7 +6297,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C162") (unit 1)
+          (reference "C161") (unit 1)
         )
       )
     )
@@ -6306,7 +6306,7 @@
   (symbol (lib_id "Auto_Library_WUT:Wurth Elektronik_875575553004") (at 97.79 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ecb8514a-b672-4d4f-97ec-639bfc0b1970)
-    (property "Reference" "C145" (at 100.33 59.69 0) (do_not_autoplace)
+    (property "Reference" "C144" (at 100.33 59.69 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "220u" (at 100.33 62.23 0) (do_not_autoplace)
@@ -6341,7 +6341,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "C145") (unit 1)
+          (reference "C144") (unit 1)
         )
       )
     )
@@ -6350,7 +6350,7 @@
   (symbol (lib_id "Auto_Library_WUT:KOA Speer RK73H1ETTP4702F") (at 72.39 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ee37e5bc-1046-4e97-b1f0-3cbad0df3462)
-    (property "Reference" "R102" (at 74.93 63.5 0)
+    (property "Reference" "R95" (at 74.93 63.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47k" (at 74.93 66.04 0)
@@ -6379,7 +6379,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R102") (unit 1)
+          (reference "R95") (unit 1)
         )
       )
     )
@@ -6388,7 +6388,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 271.78 71.12 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid f427870d-9574-4070-93d8-7040c6332ec6)
-    (property "Reference" "#PWR0301" (at 271.78 71.12 0)
+    (property "Reference" "#PWR0293" (at 271.78 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 271.78 73.66 0) (do_not_autoplace)
@@ -6404,7 +6404,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0301") (unit 1)
+          (reference "#PWR0293") (unit 1)
         )
       )
     )
@@ -6413,7 +6413,7 @@
   (symbol (lib_id "Power_WUT:PWR_FLAG") (at 312.42 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f61a2625-304e-458e-a026-52c09dee1880)
-    (property "Reference" "#FLG031" (at 312.42 97.155 0)
+    (property "Reference" "#FLG030" (at 312.42 97.155 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 312.42 93.98 0)
@@ -6429,7 +6429,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#FLG031") (unit 1)
+          (reference "#FLG030") (unit 1)
         )
       )
     )
@@ -6438,7 +6438,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 97.79 68.58 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid fbea3103-8785-435a-aef5-44a87ad8ffe3)
-    (property "Reference" "#PWR0278" (at 97.79 68.58 0)
+    (property "Reference" "#PWR0270" (at 97.79 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 97.79 71.12 0) (do_not_autoplace)
@@ -6454,7 +6454,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0278") (unit 1)
+          (reference "#PWR0270") (unit 1)
         )
       )
     )
@@ -6463,7 +6463,7 @@
   (symbol (lib_id "AAA_Preferred_WUT:KOA Speer RK73H1ETTP1003F") (at 238.76 198.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fefde94c-4698-49af-b3ed-4ec1345c58e6)
-    (property "Reference" "R111" (at 241.3 196.85 0)
+    (property "Reference" "R104" (at 241.3 196.85 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 241.3 199.39 0)
@@ -6492,7 +6492,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "R111") (unit 1)
+          (reference "R104") (unit 1)
         )
       )
     )
@@ -6501,7 +6501,7 @@
   (symbol (lib_id "Power_WUT:0V") (at 148.59 69.85 0) (unit 1)
     (in_bom no) (on_board no) (dnp no) (fields_autoplaced)
     (uuid ff471137-2ab6-4f3e-9913-2748971ac1e4)
-    (property "Reference" "#PWR0282" (at 148.59 69.85 0)
+    (property "Reference" "#PWR0274" (at 148.59 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "0V" (at 148.59 72.39 0) (do_not_autoplace)
@@ -6517,7 +6517,7 @@
     (instances
       (project "Master Timing Card"
         (path "/6e8e281e-e30f-459d-852f-231836068db5/d6642cbe-acae-4c5e-b434-aaa25d469dab"
-          (reference "#PWR0282") (unit 1)
+          (reference "#PWR0274") (unit 1)
         )
       )
     )

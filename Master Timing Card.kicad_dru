@@ -2,7 +2,7 @@
 
 (rule "CM4 Clearance"
 	(condition "A.InsideCourtyard('CN4') || A.InsideCourtyard('CN5')")
-	(constraint track_width (min 0.2mm) (opt 0.2mm) (max 0.2mm))
+	(constraint track_width (min 0.18mm) (opt 0.18mm) (max 0.2mm))
 	(constraint clearance (min 0.11mm))
 )
 (rule "RF plane clearance"
@@ -15,4 +15,7 @@
 	(condition "A.Type == 'Zone' && B.Type == 'Zone' && A.Net != B.Net")
 	(constraint clearance (min 0.5mm))
 )
-
+(rule "Ethernet shield clearance"
+	(condition "A.NetName == '*SH'")
+	(constraint clearance (min 2mm))
+)

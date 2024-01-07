@@ -616,8 +616,8 @@
       "Net-(CN9-In)": "50R",
       "Net-(FL2-IN)": "50R",
       "Net-(FL2-OUT)": "50R",
-      "Net-(R59-Pad1)": "50R",
-      "Net-(R59-Pad2)": "50R",
+      "Net-(R61-Pad1)": "50R",
+      "Net-(R61-Pad2)": "50R",
       "Net-(U11-RF_IN)": "50R"
     },
     "netclass_patterns": []
