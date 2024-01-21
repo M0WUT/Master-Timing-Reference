@@ -2639,10 +2639,6 @@
     )
   )
 
-  (text "TODO One Wire EEPROM" (at 280.67 36.83 0)
-    (effects (font (size 3 3) (thickness 0.6) bold (color 255 0 0 1)) (justify left bottom))
-    (uuid 7959f7bb-24a1-4648-8170-06fcc1dc208c)
-  )
   (text "TODO Backplane\nConnector pinout	" (at 336.55 27.94 0)
     (effects (font (size 3 3) (thickness 0.6) bold (color 255 0 0 1)) (justify left bottom))
     (uuid a80ed32e-7e1f-491d-81eb-20349c26fb27)

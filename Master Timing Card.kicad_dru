@@ -2,7 +2,7 @@
 
 (rule "CM4 Clearance"
 	(condition "A.InsideCourtyard('CN4') || A.InsideCourtyard('CN5')")
-	(constraint track_width (min 0.18mm) (opt 0.18mm) (max 0.2mm))
+	(constraint track_width (min 0.18mm) (opt 0.18mm) (max 0.3mm))
 	(constraint clearance (min 0.11mm))
 )
 (rule "RF plane clearance"
