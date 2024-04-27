@@ -17,19 +17,13 @@ jobs:
       #   run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
 
       - name: Change to home directory
-        run: sudo chmod 777 /github/home/ -R
-
-      - name: Change to home directory
-        run: cd && pwd
-
-      - name: Change to home directory
-        run: pwd
-      
-      - name: Test Kicad CLI
-        run: kicad-cli version
-        
-      - name: Checkout project repo
-        run: git clone ${{ github.server_url }}/${{ github.repository }} main
+        run: |
+          cd
+          env
+          kicad-cli version
+          git clone ${{ github.server_url }}/${{ github.repository }} main
+          git clone https://github.com/M0WUT/kicad_libraries.git wut-libraries
+          git clone https://github.com/openscopeproject/InteractiveHtmlBom.git" ibom
 
       - name: ls
         run: ls
