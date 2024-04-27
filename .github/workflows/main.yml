@@ -26,33 +26,22 @@ jobs:
           kicad-cli version
           git clone ${{ github.server_url }}/${{ github.repository }} main
           git clone https://github.com/M0WUT/kicad_libraries.git wut-libraries
-          git clone https://github.com/openscopeproject/InteractiveHtmlBom.git" ibom
+          git clone https://github.com/openscopeproject/InteractiveHtmlBom.git ibom
+          git clone https://github.com/M0WUT/kicad_releaser.git kicad_releaser
+          python3-pip install -r kicad_releaser/requirements.txt
 
-      - name: ls
-        run: ls
+     
 
-      - name: Checkout M0WUT Libraries
-        run: git clone https://github.com/M0WUT/kicad_libraries.git wut-libraries
+      # - name: Print Dependency versions
+      #   run: pip freeze
 
-      - name: Checkout Interactive HTML BoM
-        run: git clone https://github.com/openscopeproject/InteractiveHtmlBom.git" ibom
+      # - run: mkdir -p ~/.config/kicad/7.0
+      # - run: cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
+      # - run: sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/7.0/kicad_common.json
+      # - run: cat ~/.config/kicad/7.0/kicad_common.json
+      # - run: mkdir build
 
-      - name: Checkout M0WUT Kicad Releaser
-        run: git clone https://github.com/M0WUT/kicad_releaser.git kicad_releaser
-
-      - name: Install Python dependencies
-        run: python3-pip install -r kicad_releaser/requirements.txt
-
-      - name: Print Dependency versions
-        run: pip freeze
-
-      - run: mkdir -p ~/.config/kicad/7.0
-      - run: cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
-      - run: sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/7.0/kicad_common.json
-      - run: cat ~/.config/kicad/7.0/kicad_common.json
-      - run: mkdir build
-
-      # - name: Generate Webpage
+      # # - name: Generate Webpage
       #   uses: coactions/setup-xvfb@v1
       #   with:
       #     run: python ../kicad_releaser/releaser.py . ../build
