@@ -15,6 +15,9 @@ jobs:
       #     sudo apt install kicad
       # - name: Install 3rd party programs
       #   run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
+      - name: Change permissions
+        run: sudo chmod -R 777 /github/home/
+      
       - name: Test Kicad CLI
         run: kicad-cli version
         
