@@ -22,7 +22,7 @@ jobs:
         run: kicad-cli version
         
       - name: Checkout project repo
-        run: git clone ${{ github.server_url }}/${{ github.repository }} main
+        run: git clone ${{ github.server_url }}/${{ github.repository }} /github/home/main
         # uses: actions/checkout@v4
         # with:
         #   path: main
