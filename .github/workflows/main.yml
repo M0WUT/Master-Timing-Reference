@@ -18,6 +18,7 @@ jobs:
       #   run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
       - name: Test Kicad CLI
         run: kicad-cli version
+        
       - name: Checkout project repo
         uses: actions/checkout@v4
         with:
@@ -42,7 +43,7 @@ jobs:
           path: kicad_releaser
 
       - name: Install Python dependencies
-        run: python -m pip install -r kicad_releaser/requirements.txt
+        run: python3 -m pip install -r kicad_releaser/requirements.txt
 
       - name: Print Dependency versions
         run: pip freeze
