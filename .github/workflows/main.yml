@@ -43,7 +43,7 @@ jobs:
           path: kicad_releaser
 
       - name: Install Python dependencies
-        run: python3 -m pip install -r kicad_releaser/requirements.txt
+        run: python3-pip install -r kicad_releaser/requirements.txt
 
       - name: Print Dependency versions
         run: pip freeze
