@@ -25,6 +25,7 @@ jobs:
           git clone https://github.com/M0WUT/kicad_libraries.git wut-libraries
           git clone https://github.com/openscopeproject/InteractiveHtmlBom.git ibom
           git clone https://github.com/M0WUT/kicad_releaser.git kicad_releaser
+          sudo apt update
           sudo apt install python3-pip
           pip install -r kicad_releaser/requirements.txt
 
