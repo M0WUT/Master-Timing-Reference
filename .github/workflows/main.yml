@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
         image: kicad/kicad:nightly-202404
+        options: --user root
     steps:
       # - name: Install Kicad
       #   run: |
@@ -20,9 +21,6 @@ jobs:
 
       - name: Test Kicad CLI
         run: kicad-cli version
-
-      - name: Upgrade to sudo
-        run: sudo -s
         
       - name: Checkout project repo
         uses: actions/checkout@v4
@@ -48,7 +46,7 @@ jobs:
           path: kicad_releaser
 
       - name: Return to normal user
-        run: exit
+        run: su kicad
 
       - name: Install Python dependencies
         run: python3-pip install -r kicad_releaser/requirements.txt
