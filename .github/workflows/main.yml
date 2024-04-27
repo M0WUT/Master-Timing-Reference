@@ -19,6 +19,8 @@ jobs:
       - name: Change to home directory
         run: |
           cd
+          sudo chown $USER . -R
+          whoami
           env
           kicad-cli version
           git clone ${{ github.server_url }}/${{ github.repository }} main
