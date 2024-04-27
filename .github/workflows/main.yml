@@ -28,28 +28,19 @@ jobs:
           sudo apt update
           sudo apt install python3-pip -y
           pip install --break-system-packages -r kicad_releaser/requirements.txt
-
-     
-
-      # - name: Print Dependency versions
-      #   run: pip freeze
-
-      # - run: mkdir -p ~/.config/kicad/7.0
-      # - run: cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
-      # - run: sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/7.0/kicad_common.json
-      # - run: cat ~/.config/kicad/7.0/kicad_common.json
-      # - run: mkdir build
-
-      # # - name: Generate Webpage
-      #   uses: coactions/setup-xvfb@v1
-      #   with:
-      #     run: python ../kicad_releaser/releaser.py . ../build
-      #     working-directory: main
+          mkdir -p ~/.config/kicad/7.0
+          cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
+          sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/7.0/kicad_common.json
+          cat ~/.config/kicad/7.0/kicad_common.json
+          mkdir build
+          cd main
+          python ../kicad_releaser/releaser.py . ../build
           
-      # - name: Upload Pages artifact
-      #   uses: actions/upload-pages-artifact@v2
-      #   with:
-      #     path: build/
+          
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: /github/home/build/
 
   # Deploy job
   deploy:
