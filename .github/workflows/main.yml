@@ -20,7 +20,7 @@ jobs:
         run: pwd
 
       - name: Change to home directory
-        run: cd
+        run: cd && pwd
 
       - name: Change to home directory
         run: pwd
