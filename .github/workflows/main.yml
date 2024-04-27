@@ -19,7 +19,8 @@ jobs:
       - name: Change to home directory
         run: |
           cd
-          sudo chown $USER . -R
+          ls -lad .
+          sudo chown -R $USER .
           whoami
           env
           kicad-cli version
