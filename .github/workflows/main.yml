@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
         image: kicad/kicad:nightly-202404
-        options: --user root
     steps:
       # - name: Install Kicad
       #   run: |
@@ -16,6 +15,9 @@ jobs:
       #     sudo apt install kicad
       # - name: Install 3rd party programs
       #   run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
+      - name: Change permissions
+        run: sudo chown . github
+
       - name: Test Kicad CLI
         run: kicad-cli version
         
