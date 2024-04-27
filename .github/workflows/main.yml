@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
         image: kicad/kicad:nightly-202404
+        options: --user root
     steps:
       # - name: Install Kicad
       #   run: |
@@ -28,9 +29,13 @@ jobs:
         run: kicad-cli version
         
       - name: Checkout project repo
-        uses: actions/checkout@v4
-        with:
-          path: main
+        run: git clone ${{ github.server_url }}/${{ github.repository }} main
+        # uses: actions/checkout@v4
+        # with:
+        #   path: main
+
+      - name: ls
+        run: ls
 
       - name: Checkout M0WUT Libraries
         uses: actions/checkout@v4
