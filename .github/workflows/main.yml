@@ -20,6 +20,12 @@ jobs:
         run: sudo chmod -R 777 /github/home/ 
 
       - name: Test Kicad CLI
+        run: sudo kicad-cli version
+
+      - name: Change permissions
+        run: sudo chmod -R 777 /__w/
+
+      - name: Test Kicad CLI
         run: kicad-cli version
         
       - name: Checkout project repo
@@ -44,9 +50,6 @@ jobs:
         with:
           repository: "M0WUT/kicad_releaser"
           path: kicad_releaser
-
-      - name: Return to normal user
-        run: su kicad
 
       - name: Install Python dependencies
         run: python3-pip install -r kicad_releaser/requirements.txt
