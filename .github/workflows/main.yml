@@ -9,7 +9,7 @@ jobs:
         image: kicad/kicad:nightly-202404
     steps:
       - name: test
-        run: cat uname -a
+        run: uname -a
       # - name: Install Kicad
       #   run: |
       #     sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
