@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
         image: kicad/kicad:nightly-202404
+        volumes: docker:~
     steps:
-      - name: test
-        run: uname -a
       # - name: Install Kicad
       #   run: |
       #     sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
@@ -20,7 +19,7 @@ jobs:
       - name: Checkout project repo
         uses: actions/checkout@v4
         with:
-          path: main
+          path: ~/main
 
       - name: Checkout M0WUT Libraries
         uses: actions/checkout@v4
