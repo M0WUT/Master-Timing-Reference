@@ -19,16 +19,14 @@ jobs:
       - name: Change to home directory
         run: |
           cd
-          ls -lad .
           sudo chmod 777 /github/home
-          whoami
-          env
           kicad-cli version
           git clone ${{ github.server_url }}/${{ github.repository }} main
           git clone https://github.com/M0WUT/kicad_libraries.git wut-libraries
           git clone https://github.com/openscopeproject/InteractiveHtmlBom.git ibom
           git clone https://github.com/M0WUT/kicad_releaser.git kicad_releaser
-          python3-pip install -r kicad_releaser/requirements.txt
+          sudo apt install python3-pip
+          pip install -r kicad_releaser/requirements.txt
 
      
 
