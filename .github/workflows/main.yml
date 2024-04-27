@@ -20,9 +20,12 @@ jobs:
       
       - name: Test Kicad CLI
         run: kicad-cli version
+
+      - name: Change to home directory
+        run: cd /github/home
         
       - name: Checkout project repo
-        run: git clone ${{ github.server_url }}/${{ github.repository }} /github/home/main
+        run: git clone ${{ github.server_url }}/${{ github.repository }} main
         # uses: actions/checkout@v4
         # with:
         #   path: main
