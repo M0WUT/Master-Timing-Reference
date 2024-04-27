@@ -20,7 +20,7 @@ jobs:
         run: |
           cd
           ls -lad .
-          sudo chown -R $USER .
+          sudo chmod 777 /github/home
           whoami
           env
           kicad-cli version
