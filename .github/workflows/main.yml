@@ -27,7 +27,7 @@ jobs:
           git clone https://github.com/openscopeproject/InteractiveHtmlBom.git ibom
           git clone https://github.com/M0WUT/kicad_releaser.git kicad_releaser
           sudo apt update
-          sudo apt install python3-pip -y
+          sudo apt install python3-pip protobuf-compiler -y
           pip install --break-system-packages -r kicad_releaser/requirements.txt
           mkdir -p ~/.config/kicad/7.0
           cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
