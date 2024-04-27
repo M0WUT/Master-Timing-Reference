@@ -16,7 +16,7 @@ jobs:
       # - name: Install 3rd party programs
       #   run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
       - name: Change permissions
-        run: sudo chown github . 
+        run: sudo chown $USER . 
 
       - name: Test Kicad CLI
         run: kicad-cli version
