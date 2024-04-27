@@ -19,6 +19,7 @@ jobs:
       - name: Change to home directory
         run: |
           cd
+          PATH=$PATH:/github/home/.local/bin/
           sudo chmod 777 /github/home
           kicad-cli version
           git clone ${{ github.server_url }}/${{ github.repository }} main
@@ -34,7 +35,8 @@ jobs:
           cat ~/.config/kicad/7.0/kicad_common.json
           mkdir build
           cd main
-          python ../kicad_releaser/releaser.py . ../build
+
+          python3 ../kicad_releaser/releaser.py . ../build
           
           
       - name: Upload Pages artifact
