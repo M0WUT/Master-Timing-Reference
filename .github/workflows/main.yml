@@ -5,7 +5,9 @@ on:
 jobs:
   build-artifacts:
     runs-on: ubuntu-latest
-    container: kicad/kicad:nightly-202404
+    container:
+        image: kicad/kicad:nightly-202404
+        options: "--entrypoint /bin/bash"
     steps:
       # - name: Install Kicad
       #   run: |
