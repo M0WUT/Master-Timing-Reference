@@ -15,20 +15,15 @@ jobs:
       #     sudo apt install kicad
       # - name: Install 3rd party programs
       #   run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
-      - name: Change permissions
-        run: sudo chmod -R 777 /github/home/
+
+      - name: Change to home directory
+        run: cd
       
       - name: Test Kicad CLI
         run: kicad-cli version
-
-      - name: Change to home directory
-        run: cd /github/home
         
       - name: Checkout project repo
         run: git clone ${{ github.server_url }}/${{ github.repository }} main
-        # uses: actions/checkout@v4
-        # with:
-        #   path: main
 
       - name: ls
         run: ls
