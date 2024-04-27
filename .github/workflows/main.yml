@@ -35,7 +35,7 @@ jobs:
           cat ~/.config/kicad/7.0/kicad_common.json
           mkdir build
           cd main
-          sudo Xvfb :1 -screen 0 640x480x24
+          sudo Xvfb :1 -screen 0 640x480x24 &
           $DISPLAY=:1 python3 ../kicad_releaser/releaser.py . ../build
           
           
