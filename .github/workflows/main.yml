@@ -31,6 +31,10 @@ jobs:
           sudo apt update
           sudo apt install python3-pip protobuf-compiler xvfb -y
           pip install --break-system-packages -r kicad_releaser/requirements.txt
+          git clone https://github.com/yaqwsx/PcbDraw.git pcbdraw
+          cd pcbdraw
+          pip install --break-system-packages .
+          cd ..
           mkdir -p ~/.config/kicad/7.0
           cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/7.0/kicad_common.json
