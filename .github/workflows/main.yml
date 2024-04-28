@@ -23,18 +23,14 @@ jobs:
           git clone https://github.com/openscopeproject/InteractiveHtmlBom.git ibom
           git clone https://github.com/M0WUT/kicad_releaser.git kicad_releaser
           sudo apt update
-          sudo apt install python3-pip protobuf-compiler xvfb -y
+          sudo apt install python3-pip protobuf-compiler -y
           pip install --break-system-packages -r kicad_releaser/requirements.txt
           mkdir -p ~/.config/kicad/8.0
           cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/8.0
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/8.0/kicad_common.json
           cat ~/.config/kicad/8.0/kicad_common.json
           mkdir build
-          cd main
-          sudo Xvfb :1 -screen 0 640x480x24 &
-          DISPLAY=:1 python3 ../kicad_releaser/releaser.py . ../build
-          
-          
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
@@ -46,6 +42,7 @@ jobs:
       volumes:
         - /github/home/main:/kikit
         - /github/home/build:/build
+        - /github/home/kicad_releaser:/releaser
     needs: kicad-cli
     steps:
       - name: test
