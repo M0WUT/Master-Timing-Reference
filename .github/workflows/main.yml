@@ -35,6 +35,10 @@ jobs:
           cd pcbdraw
           pip install --break-system-packages .
           cd ..
+          git clone https://github.com/yaqwsx/KiKit.git kikit
+          cd kikit
+          pip install --break-system-packages .
+          cd ..
           mkdir -p ~/.config/kicad/7.0
           cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/7.0/kicad_common.json
