@@ -46,6 +46,7 @@ jobs:
       volumes:
         - /github/home/main:/kikit
         - /github/home/build:/build
+    needs: kicad-cli
     steps:
       - name: test
         run: ls
