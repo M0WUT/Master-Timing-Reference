@@ -3,20 +3,14 @@ on:
   push:
     branches: [ main ]
 jobs:
-  build-artifacts:
+  kicad-cli:
     runs-on: ubuntu-latest
     container:
-        image: kicad/kicad:nightly-202404
+      image: kicad/kicad:nightly-202404
     steps:
-      # - name: Install Kicad
-      #   run: |
-      #     sudo add-apt-repository --yes ppa:kicad/kicad-8.0-releases
-      #     sudo apt update
-      #     sudo apt install kicad
       - name: Install 3rd party programs
         run: |
           sudo apt update
-          sudo apt install -y make cmark xsltproc librsvg2-bin xdotool
 
       - name: Change to home directory
         run: |
@@ -31,10 +25,6 @@ jobs:
           sudo apt update
           sudo apt install python3-pip protobuf-compiler xvfb -y
           pip install --break-system-packages -r kicad_releaser/requirements.txt
-          git clone https://github.com/yaqwsx/PcbDraw.git pcbdraw
-          cd pcbdraw
-          pip install --break-system-packages .
-          cd ..
           mkdir -p ~/.config/kicad/8.0
           cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/8.0
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/8.0/kicad_common.json
@@ -49,11 +39,31 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: /github/home/build/
+  kikit-cli:
+    runs-on: ubuntu-latest
+    container:
+      image: yaqwsx/kikit
+      volumes:
+        - /github/home/main:/kikit
+        - /github/home/build:/build
+    needs:
+      kicad-cli
+    steps:
+      - name: test
+        run: ls
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: /github/home/build/
+
 
   # Deploy job
   deploy:
     # Add a dependency to the build job
-    needs: build-artifacts
+    needs: |
+      kicad-cli
+      kikit-cli
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
