@@ -16,7 +16,7 @@ jobs:
       - name: Install 3rd party programs
         run: |
           sudo apt update
-          sudo apt install make cmark xsltproc librsvg2-bin xdotool
+          sudo apt install -y make cmark xsltproc librsvg2-bin xdotool
 
       - name: Change to home directory
         run: |
