@@ -13,8 +13,8 @@ jobs:
       #     sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
       #     sudo apt update
       #     sudo apt install kicad
-      # - name: Install 3rd party programs
-      #   run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
+      - name: Install 3rd party programs
+        run: sudo apt install make cmark xsltproc librsvg2-bin xdotool
 
       - name: Change to home directory
         run: |
