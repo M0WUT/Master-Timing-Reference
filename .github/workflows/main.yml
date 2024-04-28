@@ -33,7 +33,7 @@ jobs:
           pip install --break-system-packages -r kicad_releaser/requirements.txt
           git clone https://github.com/yaqwsx/PcbDraw.git pcbdraw
           cd pcbdraw
-          pip install .
+          pip install --break-system-packages .
           cd ..
           mkdir -p ~/.config/kicad/7.0
           cp -r kicad_releaser/kicad_settings/* ~/.config/kicad/7.0
