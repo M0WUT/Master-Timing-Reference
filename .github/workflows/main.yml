@@ -45,7 +45,11 @@ jobs:
           HOME=/home/kicad/
           cd
           kicad-cli version
-          kicad-cli pcb render --background opaque -o test.png -i *.kicad_pcb 
+          sudo apt update
+          sudo apt install protobuf-compiler
+          cd checkout
+          kicad-cli pcb render --background opaque -o ../output/front_render.png `ls | grep ".kicad_pcb"` 
+          kicad-cli pcb render --rotate 0,180,0 --background opaque -o ../output/back_render.png `ls | grep ".kicad_pcb"`
 
   kikit-cli:
     runs-on: ubuntu-latest
