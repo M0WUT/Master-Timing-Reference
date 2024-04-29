@@ -8,14 +8,10 @@ jobs:
     container:
       image: kicad/kicad:nightly-202404
     steps:
-      - name: Change to home directory
-        run: |
-          echo $HOME
 
       - name: other
         run: |
-          PATH=$PATH:/github/home/.local/bin/
-          sudo chmod 777 /github/home
+          HOME=/home/kicad/
           kicad-cli version
           git clone ${{ github.server_url }}/${{ github.repository }} main
           git clone https://github.com/M0WUT/kicad_libraries.git wut-libraries
