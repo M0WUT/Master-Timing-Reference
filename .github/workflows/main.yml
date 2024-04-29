@@ -21,6 +21,7 @@ jobs:
           git clone https://github.com/M0WUT/kicad_libraries.git wut-libraries
           git clone https://github.com/openscopeproject/InteractiveHtmlBom.git ibom
           git clone https://github.com/M0WUT/kicad_releaser.git kicad_releaser
+          git clone https://gitlab.com/kicad/libraries/kicad-packages3D.git /usr/share/kicad/3dshapes
           pip install --break-system-packages -r kicad_releaser/requirements.txt
 
           kicad-cli version
@@ -28,8 +29,9 @@ jobs:
           cp -r kicad_releaser/kicad_settings/* .config/kicad/8.99
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" .config/kicad/8.99/kicad_common.json
 
+          mkdir build
           cd checkout
-          python releaser.py . ../build
+          python3 ../kicad_releaser/releaser.py . ../build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
