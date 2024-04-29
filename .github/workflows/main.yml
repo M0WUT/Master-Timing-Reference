@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Fix home directory
         run: |
+          apt update
           apt install -y tree
           tree
           HOME=/home/kicad/
