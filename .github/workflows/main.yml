@@ -55,6 +55,8 @@ jobs:
       volumes:
         - ~/checkout:/kikit
         - ~/shared:/output
+    steps:
+        - run: ls
 
 
 
