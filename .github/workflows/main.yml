@@ -23,37 +23,38 @@ jobs:
       - name: Checkout project repo
         uses: actions/checkout@v4
         with:
-          path: main
+          path: /home/kicad/main
 
       - name: Checkout M0WUT Libraries
         uses: actions/checkout@v4
         with:
           repository: "M0WUT/kicad_libraries"
-          path: wut-libraries
+          path: /home/kicad/wut-libraries
 
       - name: Checkout Interactive HTML BoM
         uses: actions/checkout@v4
         with:
           repository: "openscopeproject/InteractiveHtmlBom"
-          path: ibom
+          path: /home/kicad/ibom
 
       - name: Checkout M0WUT Kicad Releaser
         uses: actions/checkout@v4
         with:
           repository: "M0WUT/kicad_releaser"
-          path: kicad_releaser
+          path: /home/kicad/kicad_releaser
 
       - name: Install Python dependencies
         run: pip install --break-system-packages -r kicad_releaser/requirements.txt
 
       - name: Generate board images
         run: |
+          cd /home/kicad
           pwd 
           tree
           kicad-cli version
           rm -r .config/kicad/8.99/*
           cp -r kicad_releaser/kicad_settings/* .config/kicad/8.99
-          sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/8.99/kicad_common.json
+          sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" .config/kicad/8.99/kicad_common.json
           mkdir kicad_cli_output
           cd checkout
           kicad-cli pcb render --side top --background opaque -o ../kicad_cli_output/front_render.png "`ls | grep ".kicad_pcb"`"
