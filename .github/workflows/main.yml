@@ -8,6 +8,8 @@ jobs:
     container:
       image: kicad/kicad:nightly-202404
       options: --user root
+      volumes:
+        - /github/home:/home/kicad/kicad_cli_output
     steps:
       - name: Kicad cli tasks
         run: |
@@ -20,25 +22,24 @@ jobs:
           kicad-cli version
           sudo apt update
           sudo apt install -y protobuf-compiler
-          mkdir kicad_cli_output
           rm -r .config/kicad/8.99/*
           cp -r kicad_releaser/kicad_settings/* .config/kicad/8.99
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/8.99/kicad_common.json
           cd checkout
-          kicad-cli pcb render --side top --quality high --background opaque -o ../kicad_cli_output/front_render.png "`ls | grep ".kicad_pcb"`"
-          kicad-cli pcb render --side bottom --quality high --background opaque -o ../kicad_cli_output/back_render.png "`ls | grep ".kicad_pcb"`"
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: kicad_cli
-          path: /home/kicad/kicad_cli_output/
+          kicad-cli pcb render --side top --background opaque -o ../kicad_cli_output/front_render.png "`ls | grep ".kicad_pcb"`"
+          kicad-cli pcb render --side bottom --background opaque -o ../kicad_cli_output/back_render.png "`ls | grep ".kicad_pcb"`"
 
   kikit-cli:
     runs-on: ubuntu-latest
     container:
       image: yaqwsx/kikit
+      volumes:
+        - /github/home:/wut
     steps:
-        - run: kikit --help
+      - name: test
+        run: |
+          kikit --help
+          ls /wut
 
 
 
