@@ -33,9 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: kicad-cli
     steps:
-      - run: python -V
-      - run: pip --version
-
+      - run: ls /github/home
 
 
 
