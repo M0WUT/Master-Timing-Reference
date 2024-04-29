@@ -49,16 +49,31 @@ jobs:
     container:
       image: kicad/kicad:nightly-202404
     steps:
-      - run: HOME=/home/kicad/
-
-      - name: Download artefacts
-        uses: action/download-artifact@v4
-
-      - name: kicad-cli
+      - name: Setup home directory
         run: |
           ls
           HOME=/home/kicad/
           cd
+
+      - name: Checkout project repo
+        uses: actions/checkout@v4
+        with:
+          path: checkout
+
+      - name: Checkout M0WUT Libraries
+        uses: actions/checkout@v4
+        with:
+          repository: "M0WUT/kicad_libraries"
+          path: wut-libraries
+
+      - name: Checkout M0WUT Kicad Releaser
+        uses: actions/checkout@v4
+        with:
+          repository: "M0WUT/kicad_releaser"
+          path: kicad_releaser
+
+      - name: kicad-cli
+        run: |
           kicad-cli version
           sudo apt update
           sudo apt install -y protobuf-compiler
