@@ -37,9 +37,8 @@ jobs:
       volumes:
         - /github/home:/wut
     steps:
-      - run: pwd
-      - run: ls
-      - run: ls /wut
+      - run: kikit --help
+
 
 
 
