@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
 jobs:
-  kicad-cli:
+  artifacts:
     runs-on: ubuntu-latest
     container:
       image: kicad/kicad:nightly-202404
@@ -63,7 +63,7 @@ jobs:
   # Deploy job
   deploy:
     # Add a dependency to the build job
-    needs: artefacts
+    needs: artifacts
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
       pages: write      # to deploy to Pages
