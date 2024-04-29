@@ -8,13 +8,12 @@ jobs:
     container:
       image: kicad/kicad:nightly-202404
     steps:
-      - name: Install 3rd party programs
-        run: |
-          sudo apt update
-
       - name: Change to home directory
         run: |
-          cd
+          echo $HOME
+
+      - name: other
+        run: |
           PATH=$PATH:/github/home/.local/bin/
           sudo chmod 777 /github/home
           kicad-cli version
@@ -35,32 +34,10 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: /github/home/build/
-  kikit-cli:
-    runs-on: ubuntu-latest
-    container:
-      image: yaqwsx/kikit
-      volumes:
-        - /github/home/main:/kikit
-        - /github/home/build:/build
-        - /github/home/kicad_releaser:/releaser
-    needs: kicad-cli
-    steps:
-      - name: test
-        run: ls
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: /github/home/build/
-
-
   # Deploy job
   deploy:
     # Add a dependency to the build job
-    needs:
-      - kicad-cli
-      - kikit-cli
-
+    needs: kicad-cli
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
       pages: write      # to deploy to Pages

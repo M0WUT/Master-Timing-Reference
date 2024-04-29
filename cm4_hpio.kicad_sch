@@ -4385,7 +4385,7 @@
 				)
 			)
 		)
-		(symbol "Diode_WUT:USBLC6-2M6"
+		(symbol "Diode_WUT:USBULC6-2M6"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4397,7 +4397,7 @@
 					)
 				)
 			)
-			(property "Value" "USBLC6-2M6"
+			(property "Value" "USBULC6-2M6"
 				(at 7.62 -4.445 0)
 				(effects
 					(font
@@ -4432,7 +4432,25 @@
 					(hide yes)
 				)
 			)
-			(symbol "USBLC6-2M6_0_1"
+			(property "Manufacturer" "ST Microelectronics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "USBULC6-2M6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "USBULC6-2M6_0_1"
 				(rectangle
 					(start -3.048 3.048)
 					(end 3.048 -3.048)
@@ -4871,7 +4889,7 @@
 					)
 				)
 			)
-			(symbol "USBLC6-2M6_1_1"
+			(symbol "USBULC6-2M6_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -11590,7 +11608,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode_WUT:USBLC6-2M6")
+		(lib_id "Diode_WUT:USBULC6-2M6")
 		(at 76.2 191.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11606,7 +11624,7 @@
 				)
 			)
 		)
-		(property "Value" "USBLC6-2M6"
+		(property "Value" "USBULC6-2M6"
 			(at 83.82 196.85 0)
 			(effects
 				(font
@@ -11633,6 +11651,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 76.2 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ST Microelectronics"
+			(at 76.2 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "USBULC6-2M6"
 			(at 76.2 191.77 0)
 			(effects
 				(font
