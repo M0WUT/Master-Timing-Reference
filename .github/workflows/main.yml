@@ -46,7 +46,7 @@ jobs:
           cd
           kicad-cli version
           sudo apt update
-          sudo apt install protobuf-compiler
+          sudo apt install -y protobuf-compiler
           cd checkout
           kicad-cli pcb render --background opaque -o ../output/front_render.png `ls | grep ".kicad_pcb"` 
           kicad-cli pcb render --rotate 0,180,0 --background opaque -o ../output/back_render.png `ls | grep ".kicad_pcb"`
