@@ -9,13 +9,15 @@ jobs:
       image: kicad/kicad:nightly-202404
       options: --user root
     steps:
-      - name: Fix home directory
+      - name: Fix home directory and instal dependencies
         run: |
           apt update
-          apt install -y tree
+          apt install -y tree python3-pip protobuf-compiler
+          pwd
           tree
           HOME=/home/kicad/
           cd
+          pwd
           tree
 
       - name: Checkout project repo
@@ -46,9 +48,9 @@ jobs:
 
       - name: Generate board images
         run: |
+          pwd 
+          tree
           kicad-cli version
-          sudo apt update
-          sudo apt install -y protobuf-compiler
           rm -r .config/kicad/8.99/*
           cp -r kicad_releaser/kicad_settings/* .config/kicad/8.99
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" ~/.config/kicad/8.99/kicad_common.json
