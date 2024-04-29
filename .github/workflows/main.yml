@@ -9,61 +9,32 @@ jobs:
       image: kicad/kicad:nightly-202404
       options: --user root
     steps:
-      - name: Fix home directory and install dependencies
+      - name: Everything
         run: |
+          
           apt update
-          apt install -y tree python3-pip protobuf-compiler
-          pwd
-          tree
+          apt install -y python3-pip protobuf-compiler
           HOME=/home/kicad/
           cd
-          pwd
-          tree
 
-      - name: Checkout project repo
-        uses: actions/checkout@v4
-        with:
-          path: /home/kicad/main
+          git clone ${{ github.server_url }}/${{ github.repository }} checkout
+          git clone https://github.com/M0WUT/kicad_libraries.git wut-libraries
+          git clone https://github.com/openscopeproject/InteractiveHtmlBom.git ibom
+          git clone https://github.com/M0WUT/kicad_releaser.git kicad_releaser
+          pip install --break-system-packages -r kicad_releaser/requirements.txt
 
-      - name: Checkout M0WUT Libraries
-        uses: actions/checkout@v4
-        with:
-          repository: "M0WUT/kicad_libraries"
-          path: /home/kicad/wut-libraries
-
-      - name: Checkout Interactive HTML BoM
-        uses: actions/checkout@v4
-        with:
-          repository: "openscopeproject/InteractiveHtmlBom"
-          path: /home/kicad/ibom
-
-      - name: Checkout M0WUT Kicad Releaser
-        uses: actions/checkout@v4
-        with:
-          repository: "M0WUT/kicad_releaser"
-          path: /home/kicad/kicad_releaser
-
-      - name: Install Python dependencies
-        run: pip install --break-system-packages -r kicad_releaser/requirements.txt
-
-      - name: Generate board images
-        run: |
-          cd /home/kicad
-          pwd 
-          tree
           kicad-cli version
           rm -r .config/kicad/8.99/*
           cp -r kicad_releaser/kicad_settings/* .config/kicad/8.99
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" .config/kicad/8.99/kicad_common.json
-          mkdir kicad_cli_output
+
           cd checkout
-          kicad-cli pcb render --side top --background opaque -o ../kicad_cli_output/front_render.png "`ls | grep ".kicad_pcb"`"
-          kicad-cli pcb render --side bottom --background opaque -o ../kicad_cli_output/back_render.png "`ls | grep ".kicad_pcb"`"
+          python releaser.py . ../build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: /github/home/build/
+          path: /home/kicad/build/
 
   # Deploy job
   deploy:
