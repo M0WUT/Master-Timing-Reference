@@ -9,7 +9,7 @@ jobs:
       image: kicad/kicad:nightly-202404
       options: --user root
     steps:
-      - name: Fix home directory and instal dependencies
+      - name: Fix home directory and install dependencies
         run: |
           apt update
           apt install -y tree python3-pip protobuf-compiler
@@ -44,7 +44,7 @@ jobs:
           path: kicad_releaser
 
       - name: Install Python dependencies
-        run: pip install -r kicad_releaser/requirements.txt
+        run: pip install --break-system-packages -r kicad_releaser/requirements.txt
 
       - name: Generate board images
         run: |
