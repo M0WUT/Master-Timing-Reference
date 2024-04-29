@@ -32,12 +32,9 @@ jobs:
   kikit-cli:
     runs-on: ubuntu-latest
     needs: kicad-cli
-    container:
-      image: yaqwsx/kikit
-      volumes:
-        - /github/home:/wut
     steps:
-      - run: kikit --help
+      - run: python -V
+      - run: pip --version
 
 
 
