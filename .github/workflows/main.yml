@@ -45,7 +45,7 @@ jobs:
           HOME=/home/kicad/
           cd
           kicad-cli version
-          ls
+          kicad-cli pcb render --background opaque -o test.png -i *.kicad_pcb 
 
   kikit-cli:
     runs-on: ubuntu-latest
