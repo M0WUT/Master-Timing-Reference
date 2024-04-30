@@ -41,7 +41,7 @@ jobs:
 
 
       - name: Upload Pages artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: github-pages
           path: /home/kicad/build/
@@ -62,7 +62,7 @@ jobs:
 
 
     # Specify runner + deployment step
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
