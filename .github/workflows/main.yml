@@ -13,7 +13,7 @@ jobs:
         run: |
           
           apt update
-          apt install -y python3-pip protobuf-compiler xvfb
+          apt install -y python3-pip protobuf-compiler xvfb tree
           HOME=/home/kicad/
           cd
 
@@ -23,7 +23,7 @@ jobs:
           git clone --depth 1 https://github.com/M0WUT/kicad_releaser.git kicad_releaser
           git clone --depth 1 https://gitlab.com/kicad/libraries/kicad-packages3D.git /usr/share/kicad/3dmodels
           pip install --break-system-packages -r kicad_releaser/requirements.txt
-          pip install --break-system-packages git+https://github.com/yaqwsx/PcbDraw git+https://github.com/yaqwsx/kikit
+          pip install --break-system-packages git+https://github.com/yaqwsx/kikit
 
           kicad-cli version
           rm -r .config/kicad/8.99/*
@@ -35,6 +35,8 @@ jobs:
           Xvfb :1 &
           export DISPLAY=:1
           python3 ../kicad_releaser/releaser.py . ../build
+          cd 
+          tree
 
       - name: Upload Pages artifact
         uses: actions/upload-artifact@v4
