@@ -28,11 +28,8 @@ jobs:
           pip install --break-system-packages git+https://github.com/yaqwsx/kikit
 
 
-          cd checkout
-          kicad-cli sch export bom --output bom.csv --fields 'MPN,${QUANTITY}' --exclude-dnp --group-by MPN "../checkout/`ls ../checkout | grep .kicad_sch`"
-          cat bom.csv
-          cd ../mousearch
-          python3 mousearch.py ../checkout/`ls ../checkout | grep .kicad_pcb` ${{secrets.MOUSER_API_KEY}} ${{secrets.FARNELL_API_KEY}}
+          cd mousearch
+          python3 mousearch.py ../checkout ${{secrets.MOUSER_API_KEY}} ${{secrets.FARNELL_API_KEY}}
           cd ..
           tree
 
