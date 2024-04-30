@@ -27,6 +27,8 @@ jobs:
           pip install --break-system-packages -r mousearch/requirements.txt
           pip install --break-system-packages git+https://github.com/yaqwsx/kikit
 
+          mkdir build
+          chmod 777 build
 
           cd mousearch
           python3 mousearch.py ../checkout ${{secrets.MOUSER_API_KEY}} ${{secrets.FARNELL_API_KEY}} ../build/bom.md
@@ -38,8 +40,6 @@ jobs:
           cp -r kicad_releaser/kicad_settings/* .config/kicad/8.99
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" .config/kicad/8.99/kicad_common.json
 
-          mkdir build
-          chmod 777 build
           cd checkout
           Xvfb :1 &
           export DISPLAY=:1
