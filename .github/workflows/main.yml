@@ -36,7 +36,7 @@ jobs:
           Xvfb :1 &
           export DISPLAY=:1
           python3 ../kicad_releaser/releaser.py . ../build
-          chmod 777 /home/kicad/build 
+          chmod 777 -R /home/kicad/build 
 
       - name: Upload Pages artifact
         uses: actions/upload-artifact@v4
