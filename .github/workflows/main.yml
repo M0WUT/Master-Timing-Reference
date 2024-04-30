@@ -31,6 +31,7 @@ jobs:
           sed -i "s#PATH_TO_WUT_LIBRARIES#$(readlink -f wut-libraries)#" .config/kicad/8.99/kicad_common.json
 
           mkdir build
+          chmod 777 build
           cd checkout
           Xvfb :1 &
           export DISPLAY=:1
@@ -58,12 +59,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
+
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 
+
       - name: Webpage URL
         run: echo ${{ steps.deployment.outputs.page_url }}
 
