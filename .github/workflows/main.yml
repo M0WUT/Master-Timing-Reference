@@ -43,11 +43,8 @@ jobs:
           cd checkout
           Xvfb :1 &
           export DISPLAY=:1
-          # python3 ../kicad_releaser/releaser.py . ../build
-          chmod 777 -R /home/kicad/build 
-          ls -lh /home/kicad/build
-
-
+          python3 ../kicad_releaser/releaser.py . ../build
+          
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
