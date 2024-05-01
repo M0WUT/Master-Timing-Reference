@@ -21,19 +21,12 @@ jobs:
           git clone --depth 1 https://github.com/M0WUT/kicad_libraries.git wut-libraries
           git clone --depth 1 https://github.com/openscopeproject/InteractiveHtmlBom.git ibom
           git clone --depth 1 https://github.com/M0WUT/kicad_releaser.git kicad_releaser
-          # git clone --depth 1 https://gitlab.com/kicad/libraries/kicad-packages3D.git /usr/share/kicad/
-          git clone --depth 1 https://github.com/M0WUT/Mousearch.git mousearch
+          git clone --depth 1 https://gitlab.com/kicad/libraries/kicad-packages3D.git /usr/share/kicad/3dmodels
           pip install --break-system-packages -r kicad_releaser/requirements.txt
-          pip install --break-system-packages -r mousearch/requirements.txt
           pip install --break-system-packages git+https://github.com/yaqwsx/kikit
 
           mkdir build
           chmod 777 build
-
-          cd mousearch
-          python3 mousearch.py ../checkout ${{secrets.MOUSER_API_KEY}} ${{secrets.FARNELL_API_KEY}} ../build/bom.md
-          cd ..
-          tree
 
           kicad-cli version
           rm -r .config/kicad/8.99/*
@@ -43,7 +36,7 @@ jobs:
           cd checkout
           Xvfb :1 &
           export DISPLAY=:1
-          python3 ../kicad_releaser/releaser.py . ../build
+          python3 ../kicad_releaser/releaser.py . ../build ${{secrets.MOUSER_API_KEY}} ${{secrets.FARNELL_API_KEY}}
           
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
